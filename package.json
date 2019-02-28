@@ -1,0 +1,22 @@
+{
+  "name": "static-filmorealty",
+  "version": "1.0.0",
+  "description": "Static FilmoRealty Website",
+  "author": "Filmo Product Dev",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^2.6.0",
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
