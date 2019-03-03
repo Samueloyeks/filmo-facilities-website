@@ -1,0 +1,192 @@
+.header-image {
+    background-image: url('../img/grey-covers/img-5.png');
+    position: relative;
+    /* top: -17px; */
+    height: 450px;
+    background-position: top;
+}
+
+.policy-gist {
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.policy-links {
+    color: #C9181E;
+}
+
+.policy-links li {
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+.policy-links a{
+    color: #C9181E;
+}
+
+.policy-links a:hover {
+    font-weight: bold;
+}
+
+.alternate h1 {
+    color: #C9181E;
+    text-align: center;
+}
+
+.alternate .row div {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.policy-details .detail {
+    margin-bottom: 60px;
+}
+
+.policy-details img {
+    max-width: 100%;
+}
+
+.policy-details li {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.policy-details .detail {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h1.show-big {
+    display: none;
+}
+
+h1.show-small {
+    display: block;
+}
+
+.managers {
+    margin-top: 20px;
+}
+
+.people div {
+    align-items: center;
+    text-align: center;
+}
+
+.people img {
+    width: 187px;
+    height: 240px;
+    border-radius: 40px;
+}
+
+.people h5 {
+    margin-bottom: 0px;
+}
+
+.people span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.reviews {
+    height: 300px;
+}
+
+.person-title {
+    color: #B6252C;
+    text-transform: uppercase;
+    font-size: 14px!important;
+}
+
+.management-member {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.management-image-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .policy-gist {
+        text-align: left;
+    }
+
+    .reviews {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading-right h1 {
+        text-align: right;
+        /* margin-right: 40px; */
+    }
+
+    .heading-left h1 {
+        text-align: left;
+        /* margin-left: 40px; */
+    }
+
+    h1.show-big {
+        display: block;
+    }
+
+    h1.show-small {
+        display: none;
+    }
+
+    .policy-gist {
+        padding-right: 120px;
+        text-align: left;
+    }
+
+    .policy-details .detail {
+        text-align: left;
+    }
+
+    .people div {
+        margin-top: 20px;
+        text-align: left;
+    }
+}
+
+@media(max-width: 425px) {
+    .container {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .alternate .row div {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .alternate h1 {
+        padding: 10px;
+    }
+
+    
+    .alternate p {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .hide-very-small {
+        display: none;
+    }
+
+    .reviews {
+        margin-top: -130px;
+    }
+}

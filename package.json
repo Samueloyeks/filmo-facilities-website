@@ -1,5 +1,5 @@
 {
-  "name": "static-filmorealty",
+  "name": "filmorealty",
   "version": "1.0.0",
   "description": "Static FilmoRealty Website",
   "author": "Filmo Product Dev",
@@ -8,11 +8,12 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate --spa"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
     "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.13",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0"
   },

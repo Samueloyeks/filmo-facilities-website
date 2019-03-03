@@ -1,0 +1,9 @@
+.header-text {
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+.header-image {
+    height: 700px;  
+    overflow:hidden;
+}
