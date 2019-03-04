@@ -74,7 +74,7 @@
             <li>
               <a href="tel:+2347065923918" class="row">
                 <i class="col-1 fa fa-phone"></i>
-                <span class="col-10">+234(01) 271 0234</span>
+                <span class="col-10">+234(0)1 271 0234, +234(0)7013923495</span>
               </a>
             </li>
             <li>
