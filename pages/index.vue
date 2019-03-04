@@ -36,10 +36,10 @@
                 <div class="container col-md-8 offset-md-2">
                   <h1>Property and Facilities Management</h1>
                   <p>Each property is unique; we develop a strategic and operational plan that combines people, process and technology.</p>
-                  <a
+                  <nuxt-link
                     class="btn btn-lg btn-default"
-                    href="/services#property-facilities-management"
-                  >Learn More &rarr;</a>
+                    to="/services#property-facilities-management"
+                  >Learn More &rarr;</nuxt-link>
                 </div>
               </div>
             </div>
@@ -58,10 +58,10 @@
                     Our marketing strategies could involve conventional and unconventional approaches.
                     We utilise virtual reality for client inspections, and partner with property developers to showcase their existing and future projects.
                   </p>
-                  <a
+                  <nuxt-link
                     class="btn btn-lg btn-default"
-                    href="/services#letting-and-sales"
-                  >Learn More &rarr;</a>
+                    to="/services#letting-and-sales"
+                  >Learn More &rarr;</nuxt-link>
                 </div>
               </div>
             </div>
@@ -77,10 +77,10 @@
                 <div class="container col-md-8 offset-md-2">
                   <h1>Real-Estate Advisory &amp; Investments</h1>
                   <p>We provide advice and opportunities for small or large investment in real-estate.</p>
-                  <a
+                  <nuxt-link
                     class="btn btn-lg btn-default"
-                    href="/services#real-estate-advisory-and-investments"
-                  >Learn More &rarr;</a>
+                    to="/services#real-estate-advisory-and-investments"
+                  >Learn More &rarr;</nuxt-link>
                 </div>
               </div>
             </div>
@@ -96,10 +96,10 @@
                 <div class="container col-md-8 offset-md-2">
                   <h1>Project Management</h1>
                   <p>We provide project management, development management and development advisory services to ensure that projects are delivered to specification and quality, within budget, at the specified time.</p>
-                  <a
+                  <nuxt-link
                     class="btn btn-lg btn-default"
-                    href="/services#project-management"
-                  >Learn More &rarr;</a>
+                    to="/services#project-management"
+                  >Learn More &rarr;</nuxt-link>
                 </div>
               </div>
             </div>
@@ -115,7 +115,10 @@
                 <div class="container col-md-8 offset-md-2">
                   <h1>Consultancy</h1>
                   <p>We deliver quality solutions and provide process documentation to aid operational efﬁciencies.</p>
-                  <a class="btn btn-lg btn-default" href="/services#consultancy">Learn More &rarr;</a>
+                  <nuxt-link
+                    class="btn btn-lg btn-default"
+                    to="/services#consultancy"
+                  >Learn More &rarr;</nuxt-link>
                 </div>
               </div>
             </div>
@@ -228,10 +231,17 @@
             </div>
 
             <div class="form-group col-lg-8 offset-lg-2">
-              <label for="industry_id">Industry</label>
-              <select name="industry_id" v-model="community.industry_id" id class="form-control">
+              <label for="industry_id">Industry
+                <span class="text-danger">*</span>
+              </label>
+              <select
+                name="industry_id"
+                v-model="community.industry_id"
+                id
+                class="form-control"
+                required
+              >
                 <option value>Select an Industry</option>
-
                 <option
                   v-for="industry in industries"
                   :key="industry.id"
@@ -354,6 +364,12 @@ export default {
     return {
       title: "FilmoRealty · Home"
     };
+  },
+  created() {
+    if (this.bookingApiUrl) {
+      this.getProperties();
+      this.getIndustries();
+    }
   },
   mounted() {
     if (process.client) {

@@ -65,7 +65,7 @@
         <div class="col-lg-4 col-md-6 col-sm-6 col-6">
           <ul>
             <li>
-              <a href="https://booking.filmorealty.com">Staff Login</a>
+              <a :href="$store.state.bookingWebUrl+'/login'">Staff Login</a>
             </li>
           </ul>
         </div>
