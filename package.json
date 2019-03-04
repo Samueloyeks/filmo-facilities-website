@@ -8,7 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate --spa"
+    "generate": "nuxt generate --spa",
+    "deploy-live-cpanel": "cp -R dist/* /home/filmor5/public_html"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
