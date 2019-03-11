@@ -126,9 +126,6 @@ export default {
   },
   created() {
     this.$store.dispatch("getConfig");
-
-    if (process.client) {
-    }
   },
   mounted() {
     if (process.client) {
