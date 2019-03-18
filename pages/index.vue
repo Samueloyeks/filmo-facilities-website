@@ -139,7 +139,7 @@
                 :key="property.id"
               >
                 <div class="card chamfered-right">
-                  <a :href="$store.state.bookingWebUrl+'/products/lakowe'">
+                  <a :href="'https://escapetolakowe.com'">
                     <div
                       class="img"
                       :style="{ 'background-image': 'url(' + property.picture_path + ')' }"
