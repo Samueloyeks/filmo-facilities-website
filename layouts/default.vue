@@ -6,7 +6,7 @@
           <img
             class="header-logo"
             id="header-logo"
-            src="~/assets/img/filmorealty-logo.png"
+            src="/img/filmorealty-logo.png"
             alt="FilmoRealty Logo"
           >
         </nuxt-link>
