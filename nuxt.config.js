@@ -49,7 +49,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#B6252C' },
+  loading: { color: '#bbb' },
 
   /*
   ** Global CSS
@@ -69,8 +69,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa',
-    'bootstrap-vue/nuxt'
+    '@nuxtjs/pwa'
   ],
 
   /*

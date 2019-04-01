@@ -22,7 +22,8 @@
             <div class="header-image">
               <div class="header-text">
                 <div class="container col-md-8 offset-md-2">
-                  <h1>The Evolution Of
+                  <h1>
+                    The Evolution Of
                     <br>Real Estate Services
                   </h1>
                 </div>
@@ -231,7 +232,8 @@
             </div>
 
             <div class="form-group col-lg-8 offset-lg-2">
-              <label for="industry_id">Industry
+              <label for="industry_id">
+                Industry
                 <span class="text-danger">*</span>
               </label>
               <select
@@ -278,6 +280,11 @@ import formMixin from "~/mixins/forms";
 
 export default {
   mixins: [formMixin],
+  components: {
+    "b-carousel": () => import("bootstrap-vue/es/components/carousel/carousel"),
+    "b-carousel-slide": () =>
+      import("bootstrap-vue/es/components/carousel/carousel-slide")
+  },
   data() {
     return {
       properties: [],
