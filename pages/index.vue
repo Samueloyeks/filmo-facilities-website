@@ -139,24 +139,28 @@
                 v-for="property in properties"
                 :key="property.id"
               >
+
                 <div class="card chamfered-right">
-                  <a :href="'https://escapetolakowe.com'">
+                  <a
+                    v-modal-open="'booking-modal'"
+                    @click.prevent="resetProperty(property.id)"
+                    href="#"
+                  >
                     <div
                       class="img"
                       :style="{ 'background-image': 'url(' + property.picture_path + ')' }"
                       :aria-label="property.name"
-                    >
-                      <!-- <img src="" alt="{{ $property->name }}"> -->
-                    </div>
+                    ></div>
                     <div class="container product-info">
-                      <small class="category-info">
-                        <b v-text="property.category.name"></b>
-                      </small>
                       <p class="callout">
-                        <b v-text="property.callout .slice(0, 30)">
-                          <span v-if="property.callout.lenth > 30">,,,</span>
+                        <b v-text="property.name .slice(0, 30)">
+                          <span v-if="property.name.length > 30">...</span>
                         </b>
                       </p>
+                      <small class="category-info">
+                        <b>STARTING FROM ₦{{ cheapestUnitTypePrice(property) | moneyFormat }}</b> &middot;
+                        <b v-text="property.callout"></b>
+                      </small>
                       <!-- <p v-text="property.price"></p> -->
                     </div>
                   </a>
@@ -277,6 +281,7 @@
 <script>
 import axios from "axios";
 import formMixin from "~/mixins/forms";
+import { orderBy } from "lodash";
 
 export default {
   mixins: [formMixin],
@@ -314,7 +319,7 @@ export default {
       axios
         .get(this.bookingApiUrl + "/properties", {
           params: {
-            associations: ["Category"]
+            associations: ["Category", "Pictures", "unitTypes", "activities"]
           }
         })
         .then(response => {
@@ -354,6 +359,12 @@ export default {
     },
     onSlideEnd(slide) {
       this.sliding = false;
+    },
+    cheapestUnitTypePrice(property) {
+      if (property.unit_types.length < 1) {
+        return 0;
+      }
+      return orderBy(property.unit_types, ["amount"], ["asc"])[0].amount;
     }
   },
   computed: {
