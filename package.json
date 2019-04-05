@@ -16,6 +16,7 @@
     "axios": "^0.18.0",
     "bootstrap-vue": "^2.0.0-rc.13",
     "cross-env": "^5.2.0",
+    "lodash": "^4.17.11",
     "nuxt": "^2.4.0"
   },
   "devDependencies": {
