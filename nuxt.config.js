@@ -16,16 +16,16 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { 
-        rel: "stylesheet", 
-        type: "text/css", 
+      {
+        rel: "stylesheet",
+        type: "text/css",
         href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
         integrity: 'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr',
         crossorigin: 'anonymous'
       },
-      { 
-        rel: "stylesheet", 
-        type: "text/css", 
+      {
+        rel: "stylesheet",
+        type: "text/css",
         href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
         integrity: 'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T',
         crossorigin: 'anonymous'
@@ -33,15 +33,23 @@ module.exports = {
     ],
     script: [
       {
-        src:
-          "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
-      },
-      {
-        src: "https://unpkg.com/aos@2.3.1/dist/aos.js"
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-138727237-1",
+        async: true,
       },
       {
         src:
-          "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+          "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js",
+        body: true,
+      },
+      {
+        src: "https://unpkg.com/aos@2.3.1/dist/aos.js",
+        body: true,
+        defer: true,
+      },
+      {
+        src:
+          "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js",
+          body: true,
       }
     ]
   },
