@@ -125,6 +125,14 @@ export default {
     }
   },
   created() {
+    //google analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-138727237-1");
+
     this.$store.dispatch("getConfig");
   },
   mounted() {
@@ -168,7 +176,7 @@ export default {
           href:
             "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         }
-      ],
+      ]
     };
   }
 };
