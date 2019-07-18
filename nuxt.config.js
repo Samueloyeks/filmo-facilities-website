@@ -1,8 +1,12 @@
-const pkg = require('./package')
-
-
 module.exports = {
   mode: 'spa',
+
+  /**
+   * Page Meta Data
+   */
+  meta: {
+    name: 'FilmoRealty'
+  },
 
   /*
   ** Headers of the page
@@ -49,7 +53,7 @@ module.exports = {
       {
         src:
           "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js",
-          body: true,
+        body: true,
       }
     ]
   },

@@ -3,7 +3,7 @@
     <header>
       <div class="header-image">
         <div class="header-text">
-          <h1>ABOUT US</h1>
+          <h1>Who We Are</h1>
         </div>
       </div>
     </header>
@@ -11,8 +11,9 @@
       <section class="container">
         <div class="container row">
           <div class="col-md-7 col-lg-7 about-gist">
-            <p>We are a leading proptech and real estate services company in Nigeria. Our bold ideas and determination to continuously add value for our clients, combined with our substantial investment in people and technology is what sets us apart.</p>
-            <p>We currently provide services to over 50 clients across 10 states of Nigeria.</p>
+            <p>We are a leading PropTech and real estate services company with a focus on easy living and facilities optimization.</p>
+            <p>With over 25 years of industry experience, we now stand at the forefront of PropTech in Nigeria. Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future.</p>
+            <p>We are dedicated to data and technology in delivering more value to our clients.</p>
           </div>
           <div class="col-md-5 col-lg-5">
             <p>The lack of boundaries to our ideas, and the investment in the right people and latest technology is what sets us apart.</p>
@@ -40,7 +41,7 @@
                 src="~/assets/img/brochure/operations-technician.jpg"
                 class="section-image"
                 alt="vr viewing"
-              >
+              />
             </div>
             <div class="mt-20 col-lg-5 order-lg-1">
               <h1 class="show-big">Our Operations</h1>
@@ -60,7 +61,7 @@
                 src="~/assets/img/brochure/tech-control-room.jpg"
                 class="section-image"
                 alt="vr viewing"
-              >
+              />
             </div>
             <div class="mt-20 col-lg-5">
               <h1 class="show-big">Our Technology</h1>
@@ -79,37 +80,37 @@
               <img
                 src="~/assets/img/filmo-clients/brains-and-hammers-logo.png"
                 class="section-image"
-              >
+              />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/fibre-logo.png">
+              <img src="~/assets/img/filmo-clients/fibre-logo.png" />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/mixtafrica-logo.png">
+              <img src="~/assets/img/filmo-clients/mixtafrica-logo.png" />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/Access-Bank-Logo.png">
+              <img src="~/assets/img/filmo-clients/Access-Bank-Logo.png" />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/dangote-logo.png">
+              <img src="~/assets/img/filmo-clients/dangote-logo.png" />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/schlumberger-logo.png">
+              <img src="~/assets/img/filmo-clients/schlumberger-logo.png" />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/lagos-state-govt.png">
+              <img src="~/assets/img/filmo-clients/lagos-state-govt.png" />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/firs-logo.png">
+              <img src="~/assets/img/filmo-clients/firs-logo.png" />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/kaduna-state-logo.png">
+              <img src="~/assets/img/filmo-clients/kaduna-state-logo.png" />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/NNPC-Logo.png">
+              <img src="~/assets/img/filmo-clients/NNPC-Logo.png" />
             </div>
             <div class="slide">
-              <img src="~/assets/img/filmo-clients/9mobile-logo.png">
+              <img src="~/assets/img/filmo-clients/9mobile-logo.png" />
             </div>
           </section>
         </div>
@@ -120,11 +121,7 @@
 
 <script>
 export default {
-  head() {
-    return {
-      title: "FilmoRealty · About Us"
-    };
-  },
+  head: () => ({ title: "FilmoRealty · About Us" }),
   mounted() {
     if (process.client) {
       AOS.init({

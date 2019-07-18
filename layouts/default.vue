@@ -8,7 +8,7 @@
             id="header-logo"
             src="/img/filmorealty-logo.png"
             alt="FilmoRealty Logo"
-          >
+          />
         </nuxt-link>
       </div>
       <div class="menu-bar" :class="{change: showNav}" @click="toggleNav()">
@@ -23,27 +23,18 @@
               <nuxt-link tag="li" exact-active-class="active" class="top-of-list" to="/">
                 <a>HOME</a>
               </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/about-us">
-                <a>ABOUT US</a>
+              <nuxt-link tag="li" exact-active-class="active" to="/our-products">
+                <a>OUR PRODUCTS</a>
               </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/our-people">
-                <a>OUR PEOPLE</a>
+              <nuxt-link tag="li" exact-active-class="active" to="/who-we-are">
+                <a>WHO WE ARE</a>
               </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/services">
-                <a>OUR SERVICES</a>
-              </nuxt-link>
-              <li v-show="$router.currentRoute.path == '/'">
-                <a href="#our-community" class="smooth-scroll">OUR COMMUNITY</a>
-              </li>
-              <li v-show="$router.currentRoute.path != '/'">
-                <nuxt-link to="/#our-community">OUR COMMUNITY</nuxt-link>
-              </li>
             </ul>
           </nav>
         </div>
       </transition>
     </div>
-    <nuxt/>
+    <nuxt />
     <footer>
       <div class="footer-items container row">
         <div class="col-lg-4 col-md-6 col-sm-6 col-6">
@@ -87,19 +78,19 @@
               <i class="col-1 fa fa-map-marker"></i>
               <span class="col-10">
                 <b>Lagos:</b>
-                <br>
+                <br />
                 <span>10 Sam Adegbite Close, Off Amodu Ojikutu Street, Victoria Island, Lagos.</span>
-                <br>
+                <br />
 
                 <b>Abuja:</b>
-                <br>
+                <br />
                 <span>1 Kandi Close, Off Aminu Kano Crescent, Wuse II, Abuja, FCT.</span>
               </span>
             </li>
           </ul>
         </div>
       </div>
-      <br>
+      <br />
       <div class="footer-bottom text-center">
         <span class="text-center">
           &copy; 2019 All rights reserved.
