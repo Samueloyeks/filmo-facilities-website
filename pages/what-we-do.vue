@@ -3,19 +3,22 @@
     <header>
       <div class="header-image">
         <div class="header-text">
-          <h1>OUR PRODUCTS</h1>
+          <h1>WHAT WE DO</h1>
         </div>
       </div>
     </header>
     <main>
       <section class="container">
         <div class="row">
-          <div class="col-md-7 col-lg-7">
+          <div class="col-md-8">
             <p
               class="service-description"
-            >We are a one-stop-shop for your property service’s needs; whether it is searching for a property, investing in real-estate or seeking strong professional property and facilities management services.</p>
+            >FILMO Facilities Management is a market leader for total property & facilities management services. We are currently providing our services to major commercial and residential properties across 8 states in Nigeria with over 100 full-time technical team. The team have local and international experience in facilities management, and our operations are benchmarked with international standards of maintenance.</p>
+            <p
+              class="service-description"
+            >We are ISO Certified for Property & Facilities Management and our operations are powered by tech.</p>
           </div>
-          <div class="col-md-5 col-lg-5" data-aos="fade-down">
+          <div class="col-md-4" data-aos="fade-down">
             <ul class="list-services">
               <li>
                 <a

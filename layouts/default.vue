@@ -23,8 +23,8 @@
               <nuxt-link tag="li" exact-active-class="active" class="top-of-list" to="/">
                 <a>HOME</a>
               </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/our-products">
-                <a>OUR PRODUCTS</a>
+              <nuxt-link tag="li" exact-active-class="active" to="/what-we-do">
+                <a>WHAT WE DO</a>
               </nuxt-link>
               <nuxt-link tag="li" exact-active-class="active" to="/who-we-are">
                 <a>WHO WE ARE</a>

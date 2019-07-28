@@ -3,7 +3,7 @@
     <header>
       <div class="header-image">
         <div class="header-text">
-          <h1>Who We Are</h1>
+          <h1>WHO WE ARE</h1>
         </div>
       </div>
     </header>

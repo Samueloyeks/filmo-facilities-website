@@ -1,33 +1,13 @@
 <template>
   <div>
     <header>
-      <div>
-        <b-carousel
-          id="header-carousel"
-          style="text-shadow: 1px 1px 2px #333;"
-          background="#000"
-          :interval="4000"
-          img-width="1024"
-          img-height="480"
-          v-model="slide"
-        >
-          <b-carousel-slide
-            img-src="~/assets/img/grey-covers/home-cover.jpg"
-            id="header-image-evolution"
-            class="header-image"
-          >
-            <div class="header-image">
-              <div class="header-text">
-                <div class="container col-md-8 offset-md-2">
-                  <h1>
-                    The Evolution Of
-                    <br />Real Estate Services
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </b-carousel-slide>
-        </b-carousel>
+      <div class="header-image">
+        <div class="header-text">
+          <h1>
+            The Evolution Of
+            <br />Real Estate Services
+          </h1>
+        </div>
       </div>
     </header>
     <main id="home-products">
@@ -35,9 +15,9 @@
         <div class="detail our-people alternate heading-right">
           <div class="row">
             <div class="mt-20 col-md-8 offset-md-2 text-center" data-aos="fade-up">
-              <p>We are a leading PropTech and real estate services company with a focus on easy living and facilities optimization.</p>
-              <p>With over 25 years of industry experience, we now stand at the forefront of PropTech in Nigeria. Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future.</p>
-              <p>We are dedicated to data and technology in delivering more value to our clients.</p>
+              <p>We are a leading PropTech and real estate services company with a focus on real estate management, advisory and consultancy services.</p>
+              <p>With over 25 years of industry experience, we now stand at the forefront of PropTech in Nigeria. Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future. In 2019, we established PropLab.Africa, a subsidiary of FilmoRealty set up to develop and invest in PropTech solutions.</p>
+              <p>At Filmo, we are dedicated to using technology and data to deliver more value to our clients.</p>
             </div>
           </div>
         </div>
@@ -46,11 +26,11 @@
           <h1 class="text-center">How We Work</h1>
           <div class="row">
             <div class="mt-20 col-md-10 offset-md-1 text-center" data-aos="fade-up">
-              <p>We invest heavily in the sourcing, well-being and training of all our people. We have a rigorous recruitment process, and our property managers and technicians attend our bespoke 20 hours in-house training course annually. We currently have a work force of over 200 full time staff</p>
+              <p>We are partners not contractors. We invest in and utilize big data analysis and predictive analytics to optimize running costs and sustain quality in the management of our clients’ real estate portfolio no matter the size.</p>
 
-              <p>VAMP, our flagship proprietary software, is the engine that drives all our technology platforms and supports on-site teams in their daily operations. Our control room monitors and assesses operations and collects operational data across different matrixes for ongoing analyses of patterns, anomalies and market comparison of quality and costs.</p>
+              <p>VAMP, our flagship proprietary software, is the engine that drives all of our technology platforms and supports on-site teams in their daily operations. Our control room monitors and assesses operations, and collects operational data across different matrixes for ongoing analyses of patterns, anomalies and market comparison of quality and costs.</p>
 
-              <p>We can provide our clients with a 360-view of activities and the performance of their facilities in real-time compared to historical trends in the market which then informs better management and more strategic decision making for the future.</p>
+              <p>We are able to provide our clients with a 360-view of activities and the performance of their facilities in real-time compared to historical trends in the market which then informs better management and more strategic decision making for the future.</p>
             </div>
           </div>
         </div>
