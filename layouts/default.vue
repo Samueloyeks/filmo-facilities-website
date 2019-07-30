@@ -23,11 +23,17 @@
               <nuxt-link tag="li" exact-active-class="active" class="top-of-list" to="/">
                 <a>HOME</a>
               </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/our-products">
-                <a>OUR PRODUCTS</a>
+              <nuxt-link tag="li" exact-active-class="active" to="/what-we-do">
+                <a>WHAT WE DO</a>
               </nuxt-link>
               <nuxt-link tag="li" exact-active-class="active" to="/who-we-are">
                 <a>WHO WE ARE</a>
+              </nuxt-link>
+              <nuxt-link tag="li" exact-active-class="active" to="/news">
+                <a>NEWS</a>
+              </nuxt-link>
+              <nuxt-link tag="li" exact-active-class="active" to="/careers">
+                <a>CAREERS</a>
               </nuxt-link>
             </ul>
           </nav>
@@ -39,12 +45,6 @@
       <div class="footer-items container row">
         <div class="col-lg-4 col-md-6 col-sm-6 col-6">
           <ul>
-            <li>
-              <nuxt-link to="/services">Services</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/about-us">About Us</nuxt-link>
-            </li>
             <li>
               <nuxt-link to="/policy-statement">Policy Statement</nuxt-link>
             </li>
