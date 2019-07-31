@@ -23,8 +23,12 @@
               <nuxt-link tag="li" exact-active-class="active" class="top-of-list" to="/">
                 <a>HOME</a>
               </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/what-we-do">
+              <nuxt-link tag="li" class="with-sub" active-class="active" to="/what-we-do">
                 <a>WHAT WE DO</a>
+                <div class="dropdown-content">
+                  <nuxt-link to="/what-we-do/facilities-management">Facilities Management</nuxt-link>
+                  <nuxt-link to="/what-we-do">PropLab.Africa</nuxt-link>
+                </div>
               </nuxt-link>
               <nuxt-link tag="li" exact-active-class="active" to="/who-we-are">
                 <a>WHO WE ARE</a>
@@ -34,6 +38,9 @@
               </nuxt-link>
               <nuxt-link tag="li" exact-active-class="active" to="/careers">
                 <a>CAREERS</a>
+              </nuxt-link>
+              <nuxt-link tag="li" exact-active-class="active" to="/contact-us">
+                <a>CONTACT US</a>
               </nuxt-link>
             </ul>
           </nav>
@@ -65,7 +72,7 @@
             <li>
               <a href="tel:+2347065923918" class="row">
                 <i class="col-1 fa fa-phone"></i>
-                <span class="col-10">+234(0)1 271 0234, +234(0)7013923495</span>
+                <span class="col-10">+234(0)1 271 0234</span>
               </a>
             </li>
             <li>

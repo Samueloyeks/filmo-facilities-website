@@ -8,36 +8,6 @@
       </div>
     </header>
     <main class="about-us container">
-      <section class="sister-companies">
-        <h1 class="text-center">Sister Companies</h1>
-        <div class="company">
-          <h3 class="text-center">PropLab Africa</h3>
-          <div class="row">
-            <div class="mt-20 col-md-8 offset-md-2 text-center" data-aos="fade-up">
-              <p>As the technology ecosystem continues to grow in Nigeria – the need for specialized spaces dedicated to specific tech innovation will be necessary. This is why we launched PropLab.Africa – a dedicated community of innovators, startups and investors in the African PropTech and real estate industries. PropLab.Africa features flexible and collaborative workspace, shared services, training and hackathon events, and access to our network of industry experts, entrepreneurs and investors.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="company">
-          <h3 class="text-center">Filmo Facilities Management</h3>
-          <div class="row">
-            <div class="mt-20 col-md-8 offset-md-2 text-center" data-aos="fade-up">
-              <p>A market leader in providing tech facilities management services to commercial and residential properties across 8 states of Nigeria. The team have international and local education and experience in facilities management and operations are benchmarked with the British standards or maintenance.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="company">
-          <h3 class="text-center">Filmo Development</h3>
-          <div class="row">
-            <div class="mt-20 col-md-8 offset-md-2 text-center" data-aos="fade-up">
-              <p>A real estate development and advisory company. Over the years, earned a reputation for delivering quality real estate advisory and development management services to private and public sector clients throughout Nigeria.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="management" class="detail people heading-left">
         <h1 class="text-center">Management</h1>
         <div class="row managers">
