@@ -1,84 +1,57 @@
 <template>
-  <div style="margin: 60px 0px;">
-    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-      <div class="col-md-6 px-0">
-        <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-        <p
-          class="lead my-3"
-        >Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+  <div class="news" v-if="!postsLoading">
+    <div
+      class="jumbotron p-4 p-md-5 mb-0 text-white rounded bg-dark featured-post"
+      :style="{ 
+        'background-image': `url('${featuredPost._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url}')` 
+      }"
+      v-if="featuredPost"
+    >
+      <div class="col-md-6 px-0 featered-post-content">
+        <h1 class="display-4 font-italic" v-html="featuredPost.title.rendered"></h1>
+        <p class="lead my-3" v-html="featuredPost.excerpt.rendered"></p>
         <p class="lead mb-0">
-          <a href="#" class="text-white font-weight-bold">Continue reading...</a>
+          <!-- <a href="#" class="text-white font-weight-bold">Continue reading...</a> -->
         </p>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container pt-md-5">
       <div class="row mb-2">
-        <div class="col-md-6">
+        <div class="col-md-6" v-for="post in posts" :key="post.id">
           <div
             class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
           >
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">World</strong>
-              <h3 class="mb-0">Featured post</h3>
-              <div class="mb-1 text-muted">Nov 12</div>
+              <strong class="d-inline-block mb-2 text-primary"></strong>
+              <h3 class="mb-0" v-html="post.title.rendered"></h3>
+              <div class="mb-1 text-muted">{{ post.date | dateFormat }}</div>
               <p
                 class="card-text mb-auto"
-              >This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="stretched-link">Continue reading</a>
+                v-html="`${post.excerpt.rendered.slice(0, 70)}${(post.excerpt.rendered.length > 70) ? '[&hellip;]' : null}`"
+              ></p>
+              <!-- <a href="#" class="stretched-link">Continue reading</a> -->
             </div>
             <div class="col-auto d-none d-lg-block">
-              <svg
+              <div
+                class="post-thumbnail"
+                :style="{ 
+        'background-image': `url('${post._embedded['wp:featuredmedia'][0].media_details.sizes.thumbnail.source_url}')` 
+      }"
+              ></div>
+              <!-- <img
                 class="bd-placeholder-img"
                 width="200"
                 height="250"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Thumbnail"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" />
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div
-            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-          >
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-success">Design</strong>
-              <h3 class="mb-0">Post title</h3>
-              <div class="mb-1 text-muted">Nov 11</div>
-              <p
-                class="mb-auto"
-              >This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="stretched-link">Continue reading</a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-              <svg
-                class="bd-placeholder-img"
-                width="200"
-                height="250"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Thumbnail"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" />
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-              </svg>
+                :src="post._embedded['wp:featuredmedia'][0].media_details.sizes.thumbnail.source_url"
+                :alt="`${post.title.rendered} image`"
+              />-->
             </div>
           </div>
         </div>
       </div>
     </div>
-    <main role="main" class="container">
+    <main role="main" class="container" v-if="false">
       <div class="row">
         <div class="col-md-8 blog-main">
           <h3 class="pb-4 mb-4 font-italic border-bottom">From the Firehose</h3>
@@ -201,24 +174,68 @@
       <!-- /.row -->
     </main>
   </div>
+  <div class="loading" v-else>
+    <loading />
+  </div>
 </template>
 
 <script>
 import WPAPI from "wpapi";
 
+import loading from "@/components/ui/loading";
+
 export default {
+  components: { loading },
+  computed: {
+    featuredPost() {
+      return this.posts.find(post => post.sticky == true);
+    }
+  },
   created() {
-    this.wp = new WPAPI({ endpoint: "http://localhost:9090/wp-json" });
+    this.wp = new WPAPI({ endpoint: process.env.CMS_API_BASE_URL });
     this.getPosts();
   },
   data: () => ({
     posts: [],
+    postsLoading: true,
     wp: null
   }),
+  head: () => ({ title: "FilmoRealty · News" }),
   methods: {
     async getPosts() {
-      // this.posts = await this.wp.posts();
+      try {
+        this.posts = await this.wp.posts().embed();
+        this.postsLoading = false;
+      } catch (error) {
+        console.log(error);
+      }
     }
   }
 };
 </script>
+
+<style>
+.news {
+  margin: 60px 0px;
+}
+
+.featured-post {
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(0.5);
+}
+.featered-post-content {
+  padding: 20px !important;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.post-thumbnail {
+  background-position: center;
+  background-size: cover;
+  height: 210px;
+  width: 200px;
+}
+.loading {
+  height: 400px;
+  padding-top: 100px;
+}
+</style>

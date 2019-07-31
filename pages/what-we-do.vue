@@ -145,7 +145,7 @@
 export default {
   head() {
     return {
-      title: "FilmoRealty · Services",
+      title: "FilmoRealty · What We Do",
       link: [
         {
           rel: "stylesheet",
