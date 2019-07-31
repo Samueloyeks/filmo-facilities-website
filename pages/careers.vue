@@ -10,125 +10,189 @@
     <main class="policy-statement">
       <section class="container">
         <div class="container row">
-          <div class="col-md-7 col-lg-7 policy-gist">
-            <p>The FilmoRealty experience is unique because of the rich human resources that constitute our workforce.
-              <br>Every member of staff has been carefully picked to fit into our rich culture & values.
-            </p>
-          </div>
-          <div class="col-md-5 col-lg-4 offset-1">
-            <ul class="policy-links" data-aos="fade-up">
-              <li>
-                <a href="#hospitality-manager" class="smooth-scroll">Hospitality Manager</a>
-              </li>
-              <li>
-                <a href="#client-manager" class="smooth-scroll">Client Manager</a>
-              </li>
-              <li>
-                <a href="#general-skill-sets" class="smooth-scroll">General Skill Sets</a>
-              </li>
-            </ul>
+          <div class="col-md-6 offset-md-3 policy-gist">
+            <p>We currently do not have any career openings. Kindly join our mailing list to be notified of future opportunities.</p>
           </div>
         </div>
       </section>
-      <section class="policy-details">
-        <div id="hospitality-manager" class="container detail alternate heading-left">
-          <h1 class="show-small">Hospitality Manager</h1>
+
+      <div class="col-md-6 offset-md-3" id="our-community">
+        <h1 class="text-center">Join Our Community</h1>
+        <form id="community-subscription">
+          <span class="text-success" v-text="communityRequestSuccessMessage"></span>
           <div class="row">
-            <div class="mt-20 col-lg-4 order-lg-2" data-aos="zoom-in">
-              <img
-                src="~/assets/img/brochure/client-manager-flier.jpeg"
-                class="section-image"
-                alt="vr viewing"
+            <div class="form-group col-lg-10 offset-lg-1">
+              <label for="name">
+                Name
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                v-model="community.name"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+              <small
+                class="text-danger"
+                v-if="communityRequestErrors.name"
+                v-text="communityRequestErrors.name"
+              ></small>
+            </div>
+            <div class="form-group col-lg-10 offset-lg-1">
+              <label for="name">
+                Company Name
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                name="company_name"
+                v-model="community.company_name"
+                class="form-control"
+                placeholder="Company Name"
+                required
+              />
+              <small
+                class="text-danger"
+                v-if="communityRequestErrors.company_name"
+                v-text="communityRequestErrors.company_name"
+              ></small>
+            </div>
+            <div class="form-group col-lg-10 offset-lg-1">
+              <label for="email">
+                Email
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                v-model="community.email"
+                class="form-control"
+                placeholder="Email Address"
+                required
+              />
+              <small
+                class="text-danger"
+                v-if="communityRequestErrors.email"
+                v-text="communityRequestErrors.email"
+              ></small>
+            </div>
+
+            <div class="form-group col-lg-10 offset-lg-1">
+              <label for="industry_id">
+                Industry
+                <span class="text-danger">*</span>
+              </label>
+              <select
+                name="industry_id"
+                v-model="community.industry_id"
+                id
+                class="form-control"
+                required
               >
-            </div>
-            <div class="mt-20 col-lg-8 order-lg-1">
-              <h1 class="show-big">Hospitality Manager</h1>
-              <p class="ml-2">Requirements:</p>
-              <ul>
-                <li>Minimum of 2-3 years' experience</li>
-                <li>Proficient with Microsoft Office</li>
-                <li>Must be available to work during weekends & holidays (if necessary)</li>
-                <li>Prove of experience in an hospitality role</li>
-                <li>Customer service orientations</li>
-                <li>Team player with leadership Skills.</li>
-              </ul>
-
-              <p>Offer Type: Full-time</p>
-              <p>Salary: Attractive</p>
-              <p>Application closes 21
-                <sup>st</sup> January, 2019.
-              </p>
+                <option value>Select an Industry</option>
+                <option
+                  v-for="industry in industries"
+                  :key="industry.id"
+                  :value="industry.id"
+                  v-text="industry.name"
+                ></option>
+              </select>
+              <small
+                class="text-danger"
+                v-if="communityRequestErrors.industry_id"
+                v-text="communityRequestErrors.industry_id"
+              ></small>
             </div>
           </div>
-        </div>
-
-        <div id="client-manager" class="container detail alternate heading-left">
-          <h1 class="show-small">Client Manager</h1>
-          <div class="row">
-            <div class="mt-20 col-lg-4 order-lg-2" data-aos="zoom-in">
-            </div>
-            <div class="mt-20 col-lg-8 order-lg-1">
-              <h1 class="show-big">Client Manager</h1>
-              <p class="ml-2">Requirements:</p>
-              <ul>
-                <li>Minimum of 2-3 years' experience</li>
-                <li>Customer service orientations</li>
-                <li>Prove of experience in a similar role</li>
-                <li>Proficient with Microsoft Office</li>
-              </ul>
-
-              <p>Offer Type: Full-time</p>
-              <p>Salary: Attractive</p>
-              <p>Application closes 21
-                <sup>st</sup> January, 2019.
-              </p>
-            </div>
+          <div class="form-group text-center">
+            <button
+              class="btn btn-default"
+              :disabled="communityRequestSubmitting"
+              @click.prevent="submitCommunityRequest()"
+            >
+              <span v-if="communityRequestSubmitting">Submitting...</span>
+              <span v-else>JOIN</span>
+            </button>
           </div>
-        </div>
-
-        <div id="general-skill-sets" class="container detail alternate heading-left">
-          <h1 class="show-small">General Skill Sets</h1>
-          <div class="row">
-            <div class="mt-20 col-lg-4 order-lg-2" data-aos="zoom-in">
-              <img
-                src="~/assets/img/brochure/filmo-careers.jpeg"
-                class="section-image"
-                alt="general skill sets"
-              >
-            </div>
-            <div class="mt-20 col-lg-8 order-lg-1">
-              <h1 class="show-big">General Skill Sets</h1>
-              <p class="ml-2">At FilmoRealty we value:</p>
-              <ul>
-                <li>Creativity & Innovation</li>
-                <li>Professionalism</li>
-                <li>Commitment</li>
-                <li>Attendance/Punctuality</li>
-                <li>Planning/Organizing</li>
-                <li>Sound Judgement</li>
-                <li>Excellent Communication</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="mb-20 col-md-6 offset-md-3 order-1 order-lg-2 text-center">
-            <p>If you think you are a perfect fit for these roles send your CV to
-              <b>careers@filmo-group.com</b>.
-            </p>
-          </div>
-        </div>
-      </section>
+        </form>
+      </div>
     </main>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+import formMixin from "~/mixins/forms";
+import { orderBy } from "lodash";
+
 export default {
+  computed: {
+    bookingApiUrl() {
+      return this.$store.state.bookingApiUrl;
+    }
+  },
+  created() {
+    if (this.bookingApiUrl) this.getIndustries();
+  },
+  data: () => ({
+    industries: [],
+    communityRequestSuccessMessage: null,
+    communityRequestSubmitting: false,
+    community: {
+      name: "",
+      company_name: "",
+      email: "",
+      industry_id: "",
+      nigerian_state_id: ""
+    },
+    communityRequestErrors: {
+      name: null,
+      company_name: null,
+      communityEmail: null,
+      nigerian_state_id: null,
+      industry_id: null
+    },
+    slide: 0,
+    sliding: null
+  }),
   head() {
     return {
       title: "FilmoRealty · Careers"
     };
   },
+  methods: {
+    getIndustries() {
+      axios.get(this.bookingApiUrl + "/industries").then(response => {
+        this.industries = response.data.data;
+      });
+    },
+    submitCommunityRequest() {
+      if (
+        this.validateForm("community-subscription", "communityRequestErrors")
+      ) {
+        this.communityRequestSubmitting = true;
+        axios
+          .post(this.bookingApiUrl + "/community-membership", this.community)
+          .then(response => {
+            if (response.data.status == true) {
+              this.communityRequestSubmitting = false;
+              this.communityRequestSuccessMessage =
+                "Thank you for subscribing to our community. We are glad to have you on board";
+              this.community = {
+                name: "",
+                email: "",
+                location: "",
+                industry_id: "",
+                nigerian_state_id: null
+              };
+            }
+          });
+      }
+    }
+  },
+  mixins: [formMixin],
   mounted() {
     if (process.client) {
       AOS.init({
@@ -148,8 +212,13 @@ export default {
         });
       });
     }
+  },
+  watch: {
+    bookingApiUrl() {
+      this.getIndustries();
+    }
   }
-}
+};
 </script>
 
 <style src="~/assets/css/careers.css" scoped/>

@@ -12,11 +12,11 @@
     </header>
     <main id="home-products">
       <section class="container">
-        <div class="detail our-people alternate heading-right">
+        <div class="heading-right">
           <div class="row">
-            <div class="mt-20 col-md-8 offset-md-2 text-center" data-aos="fade-up">
-              <p>We are a leading PropTech and real estate services company with a focus on real estate management, advisory and consultancy services.</p>
-              <p>With over 25 years of industry experience, we now stand at the forefront of PropTech in Nigeria. Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future. In 2019, we established PropLab.Africa, a subsidiary of FilmoRealty set up to develop and invest in PropTech solutions.</p>
+            <div class="mt-20 col-md-10 offset-md-1" data-aos="fade-up">
+              <p>We are a leading PropTech and real estate services company with a focus on real estate management, advisory and consultancy services. With over 25 years of industry experience, we now stand at the forefront of PropTech in Nigeria.</p>
+              <p>Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future. In 2019, we established PropLab.Africa, a subsidiary of FilmoRealty which develops and invests in PropTech solutions.</p>
               <p>At Filmo, we are dedicated to using technology and data to deliver more value to our clients.</p>
             </div>
           </div>
@@ -25,12 +25,12 @@
         <div class="section community" id="our-community">
           <h1 class="text-center">How We Work</h1>
           <div class="row">
-            <div class="mt-20 col-md-10 offset-md-1 text-center" data-aos="fade-up">
+            <div class="mt-20 col-md-10 offset-md-1" data-aos="fade-up">
               <p>We are partners not contractors. We invest in and utilize big data analysis and predictive analytics to optimize running costs and sustain quality in the management of our clients’ real estate portfolio no matter the size.</p>
 
               <p>VAMP, our flagship proprietary software, is the engine that drives all of our technology platforms and supports on-site teams in their daily operations. Our control room monitors and assesses operations, and collects operational data across different matrixes for ongoing analyses of patterns, anomalies and market comparison of quality and costs.</p>
 
-              <p>We are able to provide our clients with a 360-view of activities and the performance of their facilities in real-time compared to historical trends in the market which then informs better management and more strategic decision making for the future.</p>
+              <p>We are able to provide our clients with a 360-view of activities and the performance of their facilities in real-time compared to historical trends in the market which then equips them to make informed management and strategic decisions to drive their businesses forward.</p>
             </div>
           </div>
         </div>
@@ -148,11 +148,6 @@ import formMixin from "~/mixins/forms";
 import { orderBy } from "lodash";
 
 export default {
-  components: {
-    "b-carousel": () => import("bootstrap-vue/es/components/carousel/carousel"),
-    "b-carousel-slide": () =>
-      import("bootstrap-vue/es/components/carousel/carousel-slide")
-  },
   computed: {
     bookingApiUrl() {
       return this.$store.state.bookingApiUrl;
