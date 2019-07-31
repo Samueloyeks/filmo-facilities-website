@@ -86,3 +86,4 @@ sw.*
 
 # Ignore Env Variables in static folder
 static/env.json
+.env

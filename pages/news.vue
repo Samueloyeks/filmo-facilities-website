@@ -3,7 +3,7 @@
     <div
       class="jumbotron p-4 p-md-5 mb-0 text-white rounded bg-dark featured-post"
       :style="{ 
-        'background-image': `url('${featuredPost._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url}')` 
+        'background-image': `url('${featuredPost._embedded['wp:featuredmedia'][0].media_details.large.source_url}')` 
       }"
       v-if="featuredPost"
     >
