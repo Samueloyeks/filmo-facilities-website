@@ -24,7 +24,7 @@
               <span class="person-title">CHIEF VISIONARY OFFICER AND MANAGING DIRECTOR</span>
               <p></p>
               <div data-aos="fade-up">
-                <p>Luqman worked in the United Kingdom for leading companies in Technology, Oil & Gas and Banking before moving back to Nigeria to work for Oando Plc. He has been leading FILMO in an acting capacity since 2015.</p>
+                <p>Luqman worked in the United Kingdom for leading companies in Technology, Oil & Gas and Banking before moving back to Nigeria to work for Oando Plc. He has been leading FilmoRealty since 2015.</p>
                 <p>He holds a Bsc in Applied Business Management from Imperial College, London, an Msc in Global Management from London School of Economics, London and a Certificate in Finance from The European School of Economics. He also recieved the traditional title of 'Dan Masanin Sarkin Musulmi' (Friend to the King and Leader of the Learned) from the 18th Sultan of Sokoto.</p>
                 <p>Furthermore, Luqman is passionate about the development of Nigeria and is a founding trustee of The 67 Million Youth Initiative</p>
               </div>

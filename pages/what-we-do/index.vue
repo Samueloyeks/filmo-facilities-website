@@ -1,9 +1,9 @@
 <template>
   <div>
     <header>
-      <div class="header-image">
+      <div class="header-image prop-lab">
         <div class="header-text">
-          <h1>PropLab Africa</h1>
+          <h1>PropLab.Africa</h1>
         </div>
       </div>
     </header>
@@ -55,7 +55,7 @@
           <div class="row">
             <div class="mt-20 col-md-6 order-md-2" data-aos="zoom-in">
               <img
-                src="~/assets/img/brochure/resido.jpg"
+                src="~/assets/img/brochure/resido-flat.jpg"
                 alt="Resido - image"
                 class="section-image"
               />

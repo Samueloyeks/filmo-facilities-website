@@ -23,17 +23,17 @@
               <nuxt-link tag="li" exact-active-class="active" class="top-of-list" to="/">
                 <a>HOME</a>
               </nuxt-link>
-              <nuxt-link tag="li" class="with-sub" active-class="active" to="/what-we-do">
-                <a>WHAT WE DO</a>
+              <li class="with-sub" :class="{active: (currentActiveRoutes.includes('what-we-do'))}">
+                <a href="#">WHAT WE DO</a>
                 <div class="dropdown-content">
-                  <nuxt-link to="/what-we-do/facilities-management">Facilities Management</nuxt-link>
+                  <nuxt-link to="/what-we-do/management-advisory">Management & Advisory</nuxt-link>
                   <nuxt-link to="/what-we-do">PropLab.Africa</nuxt-link>
                 </div>
-              </nuxt-link>
+              </li>
               <nuxt-link tag="li" exact-active-class="active" to="/who-we-are">
                 <a>WHO WE ARE</a>
               </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/news">
+              <nuxt-link tag="li" class="d-none" exact-active-class="active" to="/news">
                 <a>NEWS</a>
               </nuxt-link>
               <nuxt-link tag="li" exact-active-class="active" to="/careers">
@@ -109,6 +109,8 @@
 </template>
 
 <script>
+import layoutMixin from "@/mixins/layout";
+
 export default {
   data() {
     return {
@@ -133,6 +135,22 @@ export default {
 
     this.$store.dispatch("getConfig");
   },
+  head() {
+    return {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://unpkg.com/aos@2.3.1/dist/aos.css"
+        },
+        {
+          rel: "stylesheet",
+          href:
+            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        }
+      ]
+    };
+  },
+  mixins: [layoutMixin],
   mounted() {
     if (process.client) {
       if (screen.width > 768) {
@@ -161,21 +179,6 @@ export default {
         });
       });
     }
-  },
-  head() {
-    return {
-      link: [
-        {
-          rel: "stylesheet",
-          href: "https://unpkg.com/aos@2.3.1/dist/aos.css"
-        },
-        {
-          rel: "stylesheet",
-          href:
-            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-        }
-      ]
-    };
   }
 };
 </script>
