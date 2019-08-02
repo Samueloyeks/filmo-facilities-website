@@ -1,6 +1,9 @@
 import Axios from "axios";
 
 export const state = () => ({
+    activeRoutes: {
+      'what-we-do': ['/what-we-do', '/what-we-do/management-advisory']
+    },
     bookingApiUrl: '',
     bookingWebUrl: '',
 })

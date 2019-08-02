@@ -1,8 +1,12 @@
 .header-image {
-  background-image: url('../img/grey-covers/operations-technician.jpg');
+  background-image: url('../img/covers/advisory.jpg');
   position: relative;
   /* top: -17px; */
   height: 400px;
+}
+
+.header-image.prop-lab {
+  background-image: url('../img/brochure/proplab.jpg');
 }
 
 .service-description {
