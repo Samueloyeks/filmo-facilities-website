@@ -48,8 +48,7 @@
             </div>
             <div class="mt-20 col-md-6">
               <h1 class="show-big">Development & Project Management</h1>
-              <p>We are a market leader for total property & facilities management services. We currently provide our services to major commercial and residential properties across 8 states of Nigeria with over 100 full-time technical engineers. Our team has local and international experience in facilities management, and our operations are benchmarked with international standards of maintenance.</p>
-              <p>We are ISO Certified for Property and Facilities Management and our operations are powered by tech. Through our proprietary platforms, we integrate with other products including RFID people and vehicle control, home security alarm systems, e-payment solutions, and energy and waste management.</p>
+              <p>We have delivered landmark projects with our ﬁrst–class development & project management consulting services for new and existing built environments. We work with our clients from pre-contract to post contract stages to ensure that projects are completed to specification and quality, within budget and on time.</p>
             </div>
           </div>
         </div>
