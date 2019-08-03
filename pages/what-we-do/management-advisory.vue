@@ -41,7 +41,7 @@
           <div class="row">
             <div class="mt-20 col-md-6" data-aos="zoom-in">
               <img
-                src="~/assets/img/brochure/city-operator.jpg"
+                src="~/assets/img/covers/img-5.jpg"
                 alt="Consultancy image"
                 class="section-image"
               />
@@ -66,24 +66,6 @@
             <div class="mt-20 col-md-6">
               <h1 class="show-big">Consultancy Services</h1>
               <p>We have consulted for the public and private sectors, federal and state governments, and major agencies and organisations for impactful solutions to major challenges. We utilize our vast industry knowledge and experience with cutting edge technologies to deliver innovative solutions to our clients. We provide process documentation to facilitate operational efﬁciencies and drive short and long-term strategic planning.</p>
-            </div>
-          </div>
-        </div>
-
-        <div id="city-operator" class="container detail alternate">
-          <h1 class="show-small">City Operator</h1>
-          <div class="row">
-            <div class="mt-20 col-md-6" data-aos="zoom-in">
-              <img
-                src="~/assets/img/covers/img-5.jpg"
-                class="section-image"
-                alt="project management"
-              />
-            </div>
-            <div class="mt-20 col-md-6 order-md-2">
-              <h1 class="show-big">City Operator</h1>
-              <p>We provide tech solutions for the management of large estates and smart cities.</p>
-              <p>Through our proprietary platforms, we integrate with other products including RFID people and vehicle control, home security alarm systems, e-payment solutions, and energy and waste management.</p>
             </div>
           </div>
         </div>
