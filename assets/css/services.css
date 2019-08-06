@@ -2,11 +2,11 @@
   background-image: url('../img/covers/advisory.jpg');
   position: relative;
   /* top: -17px; */
-  height: 400px;
+  height: 500px;
 }
 
 .header-image.prop-lab {
-  background-image: url('../img/brochure/proplab.jpg');
+  background-image: url('../img/covers/proplab-africa.jpg');
 }
 
 .service-description {
