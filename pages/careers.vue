@@ -193,26 +193,6 @@ export default {
     }
   },
   mixins: [formMixin],
-  mounted() {
-    if (process.client) {
-      AOS.init({
-        easing: "ease-in-out-sine",
-        duration: 800
-      });
-
-      $(document).ready(function() {
-        $(".smooth-scroll").click(function() {
-          $("html, body").animate(
-            {
-              scrollTop: $($.attr(this, "href")).offset().top - 100
-            },
-            500
-          );
-          return false;
-        });
-      });
-    }
-  },
   watch: {
     bookingApiUrl() {
       this.getIndustries();

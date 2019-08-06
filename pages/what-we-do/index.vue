@@ -38,7 +38,7 @@
           <div class="row">
             <div class="mt-20 col-md-6 order-md-1" data-aos="zoom-in">
               <img
-                src="~/assets/img/brochure/vamp-fi.jpg"
+                src="~/assets/img/covers/vamp-fi.jpg"
                 alt="Property and facilities management image"
                 class="section-image"
               />

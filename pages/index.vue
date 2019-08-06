@@ -10,7 +10,7 @@
         </div>
       </div>
     </header>
-    <main id="home-products">
+    <main>
       <section class="container">
         <div class="heading-right">
           <div class="row">
@@ -21,8 +21,10 @@
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="section community" id="our-community">
+      <section class="container">
+        <div class="section" id="how-we-work">
           <h1 class="text-center">How We Work</h1>
           <div class="row">
             <div class="mt-20 col-md-10 offset-md-1" data-aos="fade-up">
@@ -35,7 +37,8 @@
           </div>
         </div>
       </section>
-      <div class="section community" id="our-community">
+
+      <div class="section community d-none" id="our-community">
         <h1 class="text-center">Join Our Community</h1>
         <form class="col-md-6 offset-md-3" id="community-subscription">
           <span class="text-success" v-text="communityRequestSuccessMessage"></span>
@@ -137,6 +140,45 @@
             </button>
           </div>
         </form>
+      </div>
+
+      <div class="section reviews" id="our-clients">
+        <h1 class="text-center hide-very-small">OUR PARTNERS & CLIENTS</h1>
+        <section class="customer-logos slider">
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/brains-and-hammers-logo.png" class="section-image" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/fibre-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/mixtafrica-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/Access-Bank-Logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/dangote-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/schlumberger-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/lagos-state-govt.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/firs-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/kaduna-state-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/NNPC-Logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/9mobile-logo.png" />
+          </div>
+        </section>
       </div>
     </main>
   </div>
