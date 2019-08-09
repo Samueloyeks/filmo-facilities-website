@@ -1,9 +1,10 @@
 .header-image {            
-    background-image: url("../img/grey-covers/our-people-background.png");
+    background-image: url("../img/covers/who-we-are.jpg");
     position: relative;
-    height: 450px;
+    height: 500px;
     background-position: top;
 }
+
 .about-us h1 {
     color: #333;
 }
@@ -15,7 +16,6 @@
 
 .about-links {
     color: #C9181E;
-    padding-top: 30px;
 }
 
 .about-links li {
@@ -30,11 +30,6 @@
 
 .about-links a:hover {
     font-weight: bold;
-}
-
-.alternate h1 {
-    color: #C9181E;
-    text-align: center;
 }
 
 .alternate .row div {
@@ -71,8 +66,22 @@ h1.show-small {
     display: block;
 }
 
-.managers {
-    margin-top: 20px;
+.sister-companies .company {
+    margin-top: 40px;
+}
+
+.sister-companies .company h3 {
+    color: #C9181E;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.people {
+    margin-top: 80px;
+}
+
+.people h1 {
+    margin-bottom: 0px;
 }
 
 .people div {
@@ -93,10 +102,6 @@ h1.show-small {
 .people span {
     font-size: 18px;
     font-weight: 400;
-}
-
-.reviews {
-    height: 300px;
 }
 
 .person-title {
@@ -135,12 +140,10 @@ h1.show-small {
 @media (min-width: 1024px) {
     .heading-right h1 {
         text-align: right;
-        /* margin-right: 40px; */
     }
 
     .heading-left h1 {
         text-align: left;
-        /* margin-left: 40px; */
     }
 
     h1.show-big {
@@ -161,8 +164,8 @@ h1.show-small {
     }
 
     .people div {
-        margin-top: 20px;
         text-align: left;
+        margin-bottom: 20px;
     }
 }
 

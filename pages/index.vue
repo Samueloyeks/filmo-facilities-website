@@ -1,178 +1,45 @@
 <template>
   <div>
     <header>
-      <div>
-        <b-carousel
-          id="header-carousel"
-          style="text-shadow: 1px 1px 2px #333;"
-          controls
-          background="#000"
-          :interval="4000"
-          img-width="1024"
-          img-height="480"
-          v-model="slide"
-          @sliding-start="onSlideStart"
-          @sliding-end="onSlideEnd"
-        >
-          <b-carousel-slide
-            img-src="~/assets/img/grey-covers/home-cover.jpg"
-            id="header-image-evolution"
-            class="header-image"
-          >
-            <div class="header-image">
-              <div class="header-text">
-                <div class="container col-md-8 offset-md-2">
-                  <h1>
-                    The Evolution Of
-                    <br>Real Estate Services
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </b-carousel-slide>
-
-          <b-carousel-slide img-src="~/assets/img/grey-covers/img-6.jpg" class="header-image">
-            <div class="header-image">
-              <div class="header-text">
-                <div class="container col-md-8 offset-md-2">
-                  <h1>Property and Facilities Management</h1>
-                  <p>Each property is unique; we develop a strategic and operational plan that combines people, process and technology.</p>
-                  <nuxt-link
-                    class="btn btn-lg btn-default"
-                    to="/services#property-facilities-management"
-                  >Learn More &rarr;</nuxt-link>
-                </div>
-              </div>
-            </div>
-          </b-carousel-slide>
-
-          <b-carousel-slide
-            img-src="~/assets/img/grey-covers/vr.jpg"
-            id="header-image-evolution"
-            class="header-image"
-          >
-            <div class="header-image">
-              <div class="header-text">
-                <div class="container col-md-8 offset-md-2">
-                  <h1>Letting and Sales</h1>
-                  <p>
-                    Our marketing strategies could involve conventional and unconventional approaches.
-                    We utilise virtual reality for client inspections, and partner with property developers to showcase their existing and future projects.
-                  </p>
-                  <nuxt-link
-                    class="btn btn-lg btn-default"
-                    to="/services#letting-and-sales"
-                  >Learn More &rarr;</nuxt-link>
-                </div>
-              </div>
-            </div>
-          </b-carousel-slide>
-
-          <b-carousel-slide
-            img-src="~/assets/img/grey-covers/lakowe.jpg"
-            id="header-image-evolution"
-            class="header-image"
-          >
-            <div class="header-image">
-              <div class="header-text">
-                <div class="container col-md-8 offset-md-2">
-                  <h1>Real-Estate Advisory &amp; Investments</h1>
-                  <p>We provide advice and opportunities for small or large investment in real-estate.</p>
-                  <nuxt-link
-                    class="btn btn-lg btn-default"
-                    to="/services#real-estate-advisory-and-investments"
-                  >Learn More &rarr;</nuxt-link>
-                </div>
-              </div>
-            </div>
-          </b-carousel-slide>
-
-          <b-carousel-slide
-            img-src="~/assets/img/grey-covers/img-5.jpg"
-            id="header-image-evolution"
-            class="header-image"
-          >
-            <div class="header-image">
-              <div class="header-text">
-                <div class="container col-md-8 offset-md-2">
-                  <h1>Project Management</h1>
-                  <p>We provide project management, development management and development advisory services to ensure that projects are delivered to specification and quality, within budget, at the specified time.</p>
-                  <nuxt-link
-                    class="btn btn-lg btn-default"
-                    to="/services#project-management"
-                  >Learn More &rarr;</nuxt-link>
-                </div>
-              </div>
-            </div>
-          </b-carousel-slide>
-
-          <b-carousel-slide
-            img-src="~/assets/img/grey-covers/bukunmi.jpg"
-            id="header-image-evolution"
-            class="header-image"
-          >
-            <div class="header-image">
-              <div class="header-text">
-                <div class="container col-md-8 offset-md-2">
-                  <h1>Consultancy</h1>
-                  <p>We deliver quality solutions and provide process documentation to aid operational efﬁciencies.</p>
-                  <nuxt-link
-                    class="btn btn-lg btn-default"
-                    to="/services#consultancy"
-                  >Learn More &rarr;</nuxt-link>
-                </div>
-              </div>
-            </div>
-          </b-carousel-slide>
-        </b-carousel>
+      <div class="header-image">
+        <div class="header-text">
+          <h1>
+            The Evolution Of
+            <br />Real Estate Services
+          </h1>
+        </div>
       </div>
     </header>
-    <main id="home-products">
-      <div class="section home-products" v-if="properties.length > 1">
-        <h1 class="text-center">OUR PRODUCTS</h1>
-        <h2 class="text-center sub-title">Lakowe Lakes Experiences</h2>
-        <section class="products">
-          <div class="container">
-            <div class="row d-f-s-a">
-              <div
-                class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product"
-                v-for="property in properties"
-                :key="property.id"
-              >
-
-                <div class="card chamfered-right">
-                  <a
-                    v-modal-open="'booking-modal'"
-                    @click.prevent="resetProperty(property.id)"
-                    href="#"
-                  >
-                    <div
-                      class="img"
-                      :style="{ 'background-image': 'url(' + property.picture_path + ')' }"
-                      :aria-label="property.name"
-                    ></div>
-                    <div class="container product-info">
-                      <p class="callout">
-                        <b v-text="property.name .slice(0, 30)">
-                          <span v-if="property.name.length > 30">...</span>
-                        </b>
-                      </p>
-                      <small class="category-info">
-                        <b>STARTING FROM ₦{{ cheapestUnitTypePrice(property) | moneyFormat }}</b> &middot;
-                        <b v-text="property.callout"></b>
-                      </small>
-                      <!-- <p v-text="property.price"></p> -->
-                    </div>
-                  </a>
-                </div>
-              </div>
+    <main>
+      <section class="container">
+        <div class="heading-right">
+          <div class="row">
+            <div class="mt-20 col-md-10 offset-md-1" data-aos="fade-up">
+              <p>We are a leading PropTech and real estate services company with a focus on real estate management, advisory and consultancy services. With over 25 years of industry experience, we now stand at the forefront of PropTech in Nigeria.</p>
+              <p>Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future. In 2019, we established PropLab.Africa, a subsidiary of FilmoRealty which develops and invests in PropTech solutions.</p>
+              <p>At Filmo, we are dedicated to using technology and data to deliver more value to our clients.</p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <div class="section community" id="our-community">
-        <h1 class="text-center">JOIN OUR COMMUNITY</h1>
+      <section class="container">
+        <div class="section" id="how-we-work">
+          <h1 class="text-center">How We Work</h1>
+          <div class="row">
+            <div class="mt-20 col-md-10 offset-md-1" data-aos="fade-up">
+              <p>We are partners not contractors. We invest in and utilize big data analysis and predictive analytics to optimize running costs and sustain quality in the management of our clients’ real estate portfolio no matter the size.</p>
+
+              <p>VAMP, our flagship proprietary software, is the engine that drives all of our technology platforms and supports on-site teams in their daily operations. Our control room monitors and assesses operations, and collects operational data across different matrixes for ongoing analyses of patterns, anomalies and market comparison of quality and costs.</p>
+
+              <p>We are able to provide our clients with a 360-view of activities and the performance of their facilities in real-time compared to historical trends in the market which then equips them to make informed management and strategic decisions to drive their businesses forward.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section community d-none" id="our-community">
+        <h1 class="text-center">Join Our Community</h1>
         <form class="col-md-6 offset-md-3" id="community-subscription">
           <span class="text-success" v-text="communityRequestSuccessMessage"></span>
 
@@ -189,7 +56,7 @@
                 class="form-control"
                 placeholder="Name"
                 required
-              >
+              />
               <small
                 class="text-danger"
                 v-if="communityRequestErrors.name"
@@ -208,7 +75,7 @@
                 class="form-control"
                 placeholder="Company Name"
                 required
-              >
+              />
               <small
                 class="text-danger"
                 v-if="communityRequestErrors.company_name"
@@ -227,7 +94,7 @@
                 class="form-control"
                 placeholder="Email Address"
                 required
-              >
+              />
               <small
                 class="text-danger"
                 v-if="communityRequestErrors.email"
@@ -274,6 +141,45 @@
           </div>
         </form>
       </div>
+
+      <div class="section reviews" id="our-clients">
+        <h1 class="text-center hide-very-small">OUR PARTNERS & CLIENTS</h1>
+        <section class="customer-logos slider">
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/brains-and-hammers-logo.png" class="section-image" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/fibre-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/mixtafrica-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/Access-Bank-Logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/dangote-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/schlumberger-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/lagos-state-govt.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/firs-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/kaduna-state-logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/NNPC-Logo.png" />
+          </div>
+          <div class="slide">
+            <img src="~/assets/img/filmo-clients/9mobile-logo.png" />
+          </div>
+        </section>
+      </div>
     </main>
   </div>
 </template>
@@ -284,48 +190,39 @@ import formMixin from "~/mixins/forms";
 import { orderBy } from "lodash";
 
 export default {
-  mixins: [formMixin],
-  components: {
-    "b-carousel": () => import("bootstrap-vue/es/components/carousel/carousel"),
-    "b-carousel-slide": () =>
-      import("bootstrap-vue/es/components/carousel/carousel-slide")
+  computed: {
+    bookingApiUrl() {
+      return this.$store.state.bookingApiUrl;
+    }
   },
-  data() {
-    return {
-      properties: [],
-      industries: [],
-      communityRequestSuccessMessage: null,
-      communityRequestSubmitting: false,
-      community: {
-        name: "",
-        company_name: "",
-        email: "",
-        industry_id: "",
-        nigerian_state_id: ""
-      },
-      communityRequestErrors: {
-        name: null,
-        company_name: null,
-        communityEmail: null,
-        nigerian_state_id: null,
-        industry_id: null
-      },
-      slide: 0,
-      sliding: null
-    };
+  created() {
+    if (this.bookingApiUrl) this.getIndustries();
   },
-  methods: {
-    getProperties() {
-      axios
-        .get(this.bookingApiUrl + "/properties", {
-          params: {
-            associations: ["Category", "Pictures", "unitTypes", "activities"]
-          }
-        })
-        .then(response => {
-          this.properties = response.data.data;
-        });
+  data: () => ({
+    industries: [],
+    communityRequestSuccessMessage: null,
+    communityRequestSubmitting: false,
+    community: {
+      name: "",
+      company_name: "",
+      email: "",
+      industry_id: "",
+      nigerian_state_id: ""
     },
+    communityRequestErrors: {
+      name: null,
+      company_name: null,
+      communityEmail: null,
+      nigerian_state_id: null,
+      industry_id: null
+    },
+    slide: 0,
+    sliding: null
+  }),
+  head: () => ({
+    title: "FilmoRealty · The Evolution of Real Estate Services"
+  }),
+  methods: {
     getIndustries() {
       axios.get(this.bookingApiUrl + "/industries").then(response => {
         this.industries = response.data.data;
@@ -353,55 +250,54 @@ export default {
             }
           });
       }
-    },
-    onSlideStart(slide) {
-      this.sliding = true;
-    },
-    onSlideEnd(slide) {
-      this.sliding = false;
-    },
-    cheapestUnitTypePrice(property) {
-      if (property.unit_types.length < 1) {
-        return 0;
-      }
-      return orderBy(property.unit_types, ["amount"], ["asc"])[0].amount;
     }
   },
-  computed: {
-    bookingApiUrl() {
-      return this.$store.state.bookingApiUrl;
-    }
+  mixins: [formMixin],
+  mounted() {
+    AOS.init({
+      easing: "ease-in-out-sine",
+      duration: 800
+    });
+
+    $(document).ready(function() {
+      $(".customer-logos").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 6
+            }
+          },
+          {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 3
+            }
+          }
+        ]
+      });
+
+      $(".smooth-scroll").click(function() {
+        $("html, body").animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top - 100
+          },
+          500
+        );
+        return false;
+      });
+    });
   },
   watch: {
     bookingApiUrl() {
-      this.getProperties();
       this.getIndustries();
-    }
-  },
-  head() {
-    return {
-      title: "FilmoRealty · Home"
-    };
-  },
-  created() {
-    if (this.bookingApiUrl) {
-      this.getProperties();
-      this.getIndustries();
-    }
-  },
-  mounted() {
-    if (process.client) {
-      $(document).ready(function() {
-        $(".smooth-scroll").click(function() {
-          $("html, body").animate(
-            {
-              scrollTop: $($.attr(this, "href")).offset().top - 100
-            },
-            500
-          );
-          return false;
-        });
-      });
     }
   }
 };

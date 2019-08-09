@@ -1,9 +1,9 @@
 .header-image {
-    background-image: url('../img/grey-covers/img-5.png');
+    background-image: url('../img/covers/careers.jpg');
     position: relative;
     /* top: -17px; */
-    height: 450px;
-    background-position: top;
+    height: 500px;
+    background-position: center;
 }
 
 .policy-gist {

@@ -8,7 +8,7 @@
             id="header-logo"
             src="/img/filmorealty-logo.png"
             alt="FilmoRealty Logo"
-          >
+          />
         </nuxt-link>
       </div>
       <div class="menu-bar" :class="{change: showNav}" @click="toggleNav()">
@@ -23,37 +23,35 @@
               <nuxt-link tag="li" exact-active-class="active" class="top-of-list" to="/">
                 <a>HOME</a>
               </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/about-us">
-                <a>ABOUT US</a>
-              </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/our-people">
-                <a>OUR PEOPLE</a>
-              </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/services">
-                <a>OUR SERVICES</a>
-              </nuxt-link>
-              <li v-show="$router.currentRoute.path == '/'">
-                <a href="#our-community" class="smooth-scroll">OUR COMMUNITY</a>
+              <li class="with-sub" :class="{active: (currentActiveRoutes.includes('what-we-do'))}">
+                <a href="#">WHAT WE DO</a>
+                <div class="dropdown-content">
+                  <nuxt-link to="/what-we-do/management-advisory">Management & Advisory</nuxt-link>
+                  <nuxt-link to="/what-we-do">PropLab.Africa</nuxt-link>
+                </div>
               </li>
-              <li v-show="$router.currentRoute.path != '/'">
-                <nuxt-link to="/#our-community">OUR COMMUNITY</nuxt-link>
-              </li>
+              <nuxt-link tag="li" exact-active-class="active" to="/who-we-are">
+                <a>WHO WE ARE</a>
+              </nuxt-link>
+              <nuxt-link tag="li" class="d-none" exact-active-class="active" to="/news">
+                <a>NEWS</a>
+              </nuxt-link>
+              <nuxt-link tag="li" exact-active-class="active" to="/careers">
+                <a>CAREERS</a>
+              </nuxt-link>
+              <nuxt-link tag="li" exact-active-class="active" to="/contact-us">
+                <a>CONTACT US</a>
+              </nuxt-link>
             </ul>
           </nav>
         </div>
       </transition>
     </div>
-    <nuxt/>
+    <nuxt />
     <footer>
       <div class="footer-items container row">
         <div class="col-lg-4 col-md-6 col-sm-6 col-6">
           <ul>
-            <li>
-              <nuxt-link to="/services">Services</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/about-us">About Us</nuxt-link>
-            </li>
             <li>
               <nuxt-link to="/policy-statement">Policy Statement</nuxt-link>
             </li>
@@ -74,7 +72,7 @@
             <li>
               <a href="tel:+2347065923918" class="row">
                 <i class="col-1 fa fa-phone"></i>
-                <span class="col-10">+234(0)1 271 0234, +234(0)7013923495</span>
+                <span class="col-10">+234(0)1 271 0234</span>
               </a>
             </li>
             <li>
@@ -87,19 +85,19 @@
               <i class="col-1 fa fa-map-marker"></i>
               <span class="col-10">
                 <b>Lagos:</b>
-                <br>
+                <br />
                 <span>10 Sam Adegbite Close, Off Amodu Ojikutu Street, Victoria Island, Lagos.</span>
-                <br>
+                <br />
 
                 <b>Abuja:</b>
-                <br>
+                <br />
                 <span>1 Kandi Close, Off Aminu Kano Crescent, Wuse II, Abuja, FCT.</span>
               </span>
             </li>
           </ul>
         </div>
       </div>
-      <br>
+      <br />
       <div class="footer-bottom text-center">
         <span class="text-center">
           &copy; 2019 All rights reserved.
@@ -111,6 +109,8 @@
 </template>
 
 <script>
+import layoutMixin from "@/mixins/layout";
+
 export default {
   data() {
     return {
@@ -135,6 +135,22 @@ export default {
 
     this.$store.dispatch("getConfig");
   },
+  head() {
+    return {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://unpkg.com/aos@2.3.1/dist/aos.css"
+        },
+        {
+          rel: "stylesheet",
+          href:
+            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        }
+      ]
+    };
+  },
+  mixins: [layoutMixin],
   mounted() {
     if (process.client) {
       if (screen.width > 768) {
@@ -163,21 +179,6 @@ export default {
         });
       });
     }
-  },
-  head() {
-    return {
-      link: [
-        {
-          rel: "stylesheet",
-          href: "https://unpkg.com/aos@2.3.1/dist/aos.css"
-        },
-        {
-          rel: "stylesheet",
-          href:
-            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-        }
-      ]
-    };
   }
 };
 </script>
