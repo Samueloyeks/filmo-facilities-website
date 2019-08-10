@@ -15,4 +15,9 @@ export default {
       return currentActiveRoutes
     }
   },
+  watch: {
+    $route() {
+      this.mountPage();
+    }
+  }
 }

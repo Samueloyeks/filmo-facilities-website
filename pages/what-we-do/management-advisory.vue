@@ -1,127 +1,133 @@
 <template>
-  <div>
-    <header>
-      <div class="header-image">
-        <div class="header-text">
-          <h1>Management & Advisory</h1>
+  <main>
+    <!-- Page title -->
+    <section
+      id="page-title"
+      class="header-image text-light"
+      data-parallax-image="http://127.0.0.1:3000/img/covers/advisory-2.jpg"
+    >
+      <div class="container">
+        <div class="page-title">
+          <h1>Management and advisory</h1>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="container">
+    </section>
+    <!-- end: Page title -->
+
+    <section>
+      <div class="container">
         <div class="row">
-          <div class="col-md-10">
+          <div class="col-lg-3">
+            <div class="heading-text heading-section">
+              <h2>OUR APPROACH</h2>
+            </div>
+          </div>
+          <div class="col-lg-9">
             <p
-              class="service-description"
-            >We utilize a collaborative and team-based approach to guide and support our clients in developing strategic and operational plans that combine smart people, innovative thinking and technology solutions. Together with our clients, we build strong ideas, thoughtful strategies and powerful executions.</p>
+              class="lead"
+            >We utilize a collaborative and team-based approach to guide and support our clients in developing strategic and operational plans that combine smart people, innovative thinking and technology solutions. We are ISO Certified for Property and Facilities Management and our operations are powered by tech. Through our proprietary platforms, we integrate with other products including RFID people and vehicle control, home security alarm systems, e-payment solutions, and energy and waste management.</p>
+            <p
+              class="lead"
+            >Together with our clients, we build strong ideas, thoughtful strategies and powerful executions.</p>
           </div>
         </div>
-      </section>
-      <section class="container service-details">
-        <div id="property-and-facility-management" class="container detail alternate">
-          <h1 class="show-small">Properties & Facilities Management</h1>
-          <div class="row">
-            <div class="mt-20 col-md-6 order-md-2" data-aos="zoom-in">
-              <img
-                src="~/assets/img/brochure/operations-technician.jpg"
-                alt="Consultancy image"
-                class="section-image"
-              />
-            </div>
-            <div class="mt-20 col-md-6">
-              <h1 class="show-big">Properties & Facilities Management</h1>
-              <p>We are a market leader for total property & facilities management services. We currently provide our services to major commercial and residential properties across 8 states of Nigeria with over 100 full-time technical engineers. Our team has local and international experience in facilities management, and our operations are benchmarked with international standards of maintenance.</p>
-              <p>We are ISO Certified for Property and Facilities Management and our operations are powered by tech. Through our proprietary platforms, we integrate with other products including RFID people and vehicle control, home security alarm systems, e-payment solutions, and energy and waste management.</p>
-            </div>
-          </div>
+      </div>
+    </section>
+
+    <section class="box-fancy section-fullwidth text-light p-b-0">
+      <div class="row">
+        <div style="background-color:rgb(149, 149, 154);" class="col-lg-4">
+          <h3>Properties & Facilities Management</h3>
+          <p>We are a market leader for total property & facilities management services. We currently provide our services to major commercial and residential properties across 8 states of Nigeria with over 100 full-time technical engineers. Our team has local and international experience in facilities management, and our operations are benchmarked with international standards of maintenance.</p>
         </div>
 
-        <div id="development-and-project-management" class="container detail alternate">
-          <h1 class="show-small">Development & Project Management</h1>
-          <div class="row">
-            <div class="mt-20 col-md-6" data-aos="zoom-in">
-              <img
-                src="~/assets/img/covers/img-5.jpg"
-                alt="Consultancy image"
-                class="section-image"
-              />
-            </div>
-            <div class="mt-20 col-md-6">
-              <h1 class="show-big">Development & Project Management</h1>
-              <p>We have delivered landmark projects with our ﬁrst–class development & project management consulting services for new and existing built environments. We work with our clients from pre-contract to post contract stages to ensure that projects are completed to specification and quality, within budget and on time.</p>
-            </div>
-          </div>
+        <div style="background-color:#a1a1a3" class="col-lg-4">
+          <h3>Development & Project Management</h3>
+          <p>We have delivered landmark projects with our ﬁrst–class development & project management consulting services for new and existing built environments. We work with our clients from pre-contract to post contract stages to ensure that projects are completed to specification and quality, within budget and on time.</p>
         </div>
 
-        <div id="consultancy" class="container detail alternate">
-          <h1 class="show-small">Consultancy Services</h1>
-          <div class="row">
-            <div class="mt-20 col-md-6 order-md-2" data-aos="zoom-in">
-              <img
-                src="~/assets/img/brochure/bukunmi-flat.jpg"
-                alt="Consultancy image"
-                class="section-image"
-              />
-            </div>
-            <div class="mt-20 col-md-6">
-              <h1 class="show-big">Consultancy Services</h1>
-              <p>We have consulted for the public and private sectors, federal and state governments, and major agencies and organisations for impactful solutions to major challenges. We utilize our vast industry knowledge and experience with cutting edge technologies to deliver innovative solutions to our clients. We provide process documentation to facilitate operational efﬁciencies and drive short and long-term strategic planning.</p>
-            </div>
+        <div style="background-color:rgb(168, 168, 171);" class="col-lg-4">
+          <h3>Consultancy Services</h3>
+          <p>We have consulted for the public and private sectors, federal and state governments, and major agencies and organisations for impactful solutions to major challenges. We utilize our vast industry knowledge and experience with cutting edge technologies to deliver innovative solutions to our clients. We provide process documentation to facilitate operational efﬁciencies and drive short and long-term strategic planning.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client logo -->
+    <section>
+      <div class="container">
+        <h2>Our Clients</h2>
+        <div
+          class="carousel"
+          data-items="6"
+          data-items-sm="4"
+          data-items-xs="3"
+          data-items-xxs="2"
+          data-margin="20"
+          data-arrows="false"
+          data-autoplay="true"
+          data-autoplay-timeout="3000"
+          data-loop="true"
+        >
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/fibre-logo.png" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/mixtafrica-logo.png" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/Access-Bank-Logo.png" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/dangote-logo.png" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/schlumberger-logo.png" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/lagos-state-govt.png" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/firs-logo.png" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/kaduna-state-logo.png" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/NNPC-Logo.png" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img alt src="/img/filmo-clients/9mobile-logo.png" />
+            </a>
           </div>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
+    </section>
+    <!-- end: Client logo -->
+  </main>
 </template>
 
 <script>
 export default {
-  head() {
-    return {
-      title: "FilmoRealty · What We Do",
-      link: [
-        {
-          rel: "stylesheet",
-          href: "https://unpkg.com/aos@2.3.1/dist/aos.css"
-        },
-        {
-          rel: "stylesheet",
-          href:
-            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-        }
-      ],
-      script: [
-        {
-          src:
-            "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
-        },
-        {
-          src: "https://unpkg.com/aos@2.3.1/dist/aos.js"
-        }
-      ]
-    };
-  },
-  mounted() {
-    if (process.client) {
-      AOS.init({
-        easing: "ease-in-out-sine",
-        duration: 800
-      });
-
-      $(document).ready(function() {
-        $(".smooth-scroll").click(function() {
-          $("html, body").animate(
-            {
-              scrollTop: $($.attr(this, "href")).offset().top - 100
-            },
-            500
-          );
-          return false;
-        });
-      });
-    }
-  }
+  head: () => ({ title: "FilmoRealty · Management & Advisory" })
 };
 </script>
-
-<style src="~/assets/css/services.css" scoped></style>

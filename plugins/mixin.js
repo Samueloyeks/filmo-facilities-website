@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import { mapActions } from 'vuex'
 
+import functionsFromPolo from "@/mixins/functions-from-polo";
+
 Vue.mixin({
   computed: {
     dateToday() {
@@ -40,5 +42,6 @@ Vue.mixin({
     ...mapActions({
       toast: 'toast/addToast'
     })
-  }
+  },
+  mixins: [functionsFromPolo]
 })

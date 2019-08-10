@@ -1,76 +1,129 @@
 <template>
-  <div>
-    <header>
-      <div class="header-image">
-        <div class="header-text">
+  <main>
+    <!-- Page title -->
+    <section
+      id="page-title"
+      class="header-image text-light"
+      data-parallax-image="/img/covers/contact-us-two.jpg"
+    >
+      <div class="container">
+        <div class="page-title">
           <h1>Contact Us</h1>
         </div>
       </div>
-    </header>
-    <main class="container" style="margin-top: 40px;">
-      <div class="row mt20 mb-20">
-        <div class="pl-0 mb-20 col-md-6">
-          <div class="pl-0 col-md-7">
-            <h3>Lagos Office</h3>
-            <p>
-              10 Sam Adegbite Close, Off Amodu Ojikutu Street, Victoria Island, Lagos.
-              <br />
-              <i class="pl-0 col-1 fa fa-envelope"></i>
-              <span class="col-10">info@filmorealty.com</span>
-              <br />
-              <i class="pl-0 col-1 fa fa-phone"></i>
-              <span class="col-10">+234(0)1 271 0234</span>
-            </p>
-          </div>
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe
-                width="491"
-                height="400"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Filmo%20Group&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe>Google Maps Generator by
-              <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
-            </div>
-          </div>
-        </div>
+    </section>
+    <!-- end: Page title -->
 
-        <div class="pl-0 col-md-6">
-          <div class="pl-0 col-md-7">
-            <h3>Abuja Office</h3>
-            <p>
-              1 Kandi Close, Off Aminu Kano Crescent, Wuse II, Abuja, FCT.
-              <br />
-              <i class="pl-0 col-1 fa fa-envelope"></i>
-              <span class="col-10">info@filmorealty.com</span>
-              <br />
-              <i class="pl-0 col-1 fa fa-phone"></i>
-              <span class="col-10">+234(0)1 271 0234</span>
-            </p>
-          </div>
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe
-                width="480"
-                height="400"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=kandi%20close&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe>Google Maps Generator by
-              <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+    <!-- CONTENT -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3 class="text-uppercase">Get In Touch</h3>
+            <div class="m-t-30">
+              <form
+                class="widget-contact-form"
+                action="include/contact-form.php"
+                role="form"
+                method="post"
+              >
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      aria-required="true"
+                      name="widget-contact-form-name"
+                      class="form-control required name"
+                      placeholder="Enter your Name"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      aria-required="true"
+                      name="widget-contact-form-email"
+                      class="form-control required email"
+                      placeholder="Enter your Email"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="subject">Your Subject</label>
+                    <input
+                      type="text"
+                      name="widget-contact-form-subject"
+                      class="form-control required"
+                      placeholder="Subject..."
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    type="text"
+                    name="widget-contact-form-message"
+                    rows="5"
+                    class="form-control required"
+                    placeholder="Enter your Message"
+                  ></textarea>
+                </div>
+
+                <div class="form-group" v-if="false">
+                  <script src="https://www.google.com/recaptcha/api.js"></script>
+                  <div class="g-recaptcha" data-sitekey="6LddCxAUAAAAAKOg0-U6IprqOZ7vTfiMNSyQT2-M"></div>
+                </div>
+
+                <button class="btn" type="submit" id="form-submit">
+                  <i class="fa fa-paper-plane"></i>&nbsp;Send message
+                </button>
+              </form>
             </div>
+          </div>
+          <div class="col-sm-6">
+            <h3 class="text-uppercase">Address & Map</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <address>
+                  <strong>Lagos Office.</strong>
+                  <br />10 Sam Adegbite Close, Off Amodu Ojikutu Street,
+                  <br />Victoria Island, Lagos.
+                  <br />
+                  <abbr title="Phone">P:</abbr> +234(0)1 271 0234
+                </address>
+              </div>
+              <div class="col-lg-6">
+                <address>
+                  <strong>Abuja Office</strong>
+                  <br />1 Kandi Close, Off Aminu Kano Crescent, Wuse II,
+                  <br />Abuja, FCT.
+                  <br />
+                  <abbr title="Phone">P:</abbr> +234(0)1 271 0234
+                </address>
+              </div>
+            </div>
+
+            <!-- Google map sensor -->
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  class="gmap_canvas_lagos_office"
+                  src="https://maps.google.com/maps?q=Filmo%20Group%20Sam%20Adegbite&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe>
+                <a href="https://www.bitgeeks.net/embed-google-map/"></a>
+              </div>
+            </div>
+            <!-- Google map sensor -->
           </div>
         </div>
       </div>
-    </main>
-  </div>
+    </section>
+    <!-- end: CONTENT -->
+  </main>
 </template>
-
-<style src="~/assets/css/contact-us.css" scoped></style>

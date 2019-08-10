@@ -1,184 +1,168 @@
 <template>
-  <div id="app">
-    <div class="container-fluid row top-header" id="top-header">
-      <div class="col-5 col-md-4">
-        <nuxt-link to="/">
-          <img
-            class="header-logo"
-            id="header-logo"
-            src="/img/filmorealty-logo.png"
-            alt="FilmoRealty Logo"
-          />
-        </nuxt-link>
-      </div>
-      <div class="menu-bar" :class="{change: showNav}" @click="toggleNav()">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
-        <div class="nav-container col-md-8" v-cloak>
-          <nav class="main-nav float-right" id="main-nav" v-show="showNav">
-            <ul class="row nav-list float-right" v-if="showNav" @click="toggleNav()">
-              <nuxt-link tag="li" exact-active-class="active" class="top-of-list" to="/">
-                <a>HOME</a>
-              </nuxt-link>
-              <li class="with-sub" :class="{active: (currentActiveRoutes.includes('what-we-do'))}">
-                <a href="#">WHAT WE DO</a>
-                <div class="dropdown-content">
-                  <nuxt-link to="/what-we-do/management-advisory">Management & Advisory</nuxt-link>
-                  <nuxt-link to="/what-we-do">PropLab.Africa</nuxt-link>
-                </div>
-              </li>
-              <nuxt-link tag="li" exact-active-class="active" to="/who-we-are">
-                <a>WHO WE ARE</a>
-              </nuxt-link>
-              <nuxt-link tag="li" class="d-none" exact-active-class="active" to="/news">
-                <a>NEWS</a>
-              </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/careers">
-                <a>CAREERS</a>
-              </nuxt-link>
-              <nuxt-link tag="li" exact-active-class="active" to="/contact-us">
-                <a>CONTACT US</a>
-              </nuxt-link>
-            </ul>
-          </nav>
-        </div>
-      </transition>
-    </div>
+  <!-- Body Inner -->
+  <div class="body-inner">
+    <!-- Header -->
+    <header id="header" data-transparent="true" data-fullwidth="true" class="dark header-plain">
+      <header-menu />
+    </header>
+    <!-- end: Header -->
     <nuxt />
-    <footer>
-      <div class="footer-items container row">
-        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
-          <ul>
-            <li>
-              <nuxt-link to="/policy-statement">Policy Statement</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/careers">Careers</nuxt-link>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
-          <ul>
-            <li>
-              <a :href="$store.state.bookingWebUrl+'/login'">Staff Login</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 col-sm-12 col-12">
-          <ul>
-            <li>
-              <a href="tel:+2347065923918" class="row">
-                <i class="col-1 fa fa-phone"></i>
-                <span class="col-10">+234(0)1 271 0234</span>
-              </a>
-            </li>
-            <li>
-              <a href="mail:info@filmorealty.com" class="row">
-                <i class="col-1 fa fa-envelope"></i>
-                <span class="col-10">info@filmorealty.com</span>
-              </a>
-            </li>
-            <li class="row">
-              <i class="col-1 fa fa-map-marker"></i>
-              <span class="col-10">
-                <b>Lagos:</b>
-                <br />
-                <span>10 Sam Adegbite Close, Off Amodu Ojikutu Street, Victoria Island, Lagos.</span>
-                <br />
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="widget">
+                <div class="widget-title">Contact Us</div>
+                <p class="mb-5">
+                  Built with love in Fort Worth, Texas, USA
+                  <br />All rights reserved. Copyright © 2019. INSPIRO.
+                </p>
+                <h4>We are social</h4>
+                <div class="social-icons social-icons-light social-icons-colored-hover">
+                  <ul>
+                    <li class="social-facebook">
+                      <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="social-youtube">
+                      <a href="#">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li class="social-instagram">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="social-linkedin">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="widget">
+                    <div class="widget-title">Discover</div>
+                    <ul class="list">
+                      <li>
+                        <a href="#">Features</a>
+                      </li>
+                      <li>
+                        <a href="#">Layouts</a>
+                      </li>
+                      <li>
+                        <a href="#">Corporate</a>
+                      </li>
+                      <li>
+                        <a href="#">Updates</a>
+                      </li>
+                      <li>
+                        <a href="#">Pricing</a>
+                      </li>
+                      <li>
+                        <a href="#">Customers</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-                <b>Abuja:</b>
-                <br />
-                <span>1 Kandi Close, Off Aminu Kano Crescent, Wuse II, Abuja, FCT.</span>
-              </span>
-            </li>
-          </ul>
+                <div class="col-lg-3">
+                  <div class="widget">
+                    <div class="widget-title">Features</div>
+                    <ul class="list">
+                      <li>
+                        <a href="#">Layouts</a>
+                      </li>
+                      <li>
+                        <a href="#">Headers</a>
+                      </li>
+                      <li>
+                        <a href="#">Widgets</a>
+                      </li>
+                      <li>
+                        <a href="#">Footers</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <div class="widget">
+                    <div class="widget-title">Pages</div>
+                    <ul class="list">
+                      <li>
+                        <a href="#">Portfolio</a>
+                      </li>
+                      <li>
+                        <a href="#">Blog</a>
+                      </li>
+                      <li>
+                        <a href="#">Shop</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="widget">
+                    <div class="widget-title">Support</div>
+                    <ul class="list">
+                      <li>
+                        <a href="#">Help Desk</a>
+                      </li>
+                      <li>
+                        <a href="#">Documentation</a>
+                      </li>
+                      <li>
+                        <a href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <br />
-      <div class="footer-bottom text-center">
-        <span class="text-center">
-          &copy; 2019 All rights reserved.
-          <b>FilmoRealty Limited. A subsidiary of Filmo Holdings Limited</b>
-        </span>
+      <div class="copyright-content">
+        <div class="container">
+          <div class="copyright-text text-center">
+            &copy; 2019 POLO - Responsive Multi-Purpose HTML5 Template.
+            All Rights Reserved.
+            <a
+              href="http://www.inspiro-media.com"
+              target="_blank"
+            >INSPIRO</a>
+          </div>
+        </div>
       </div>
     </footer>
+    <!-- end: Footer -->
+
+    <!-- Scroll top -->
+    <a id="scrollTop">
+      <i class="icon-chevron-up1"></i>
+      <i class="icon-chevron-up1"></i>
+    </a>
+    <!--Plugins-->
   </div>
+  <!-- end: Body Inner -->
 </template>
 
 <script>
+import headerMenu from "@/components/layout/header-menu";
 import layoutMixin from "@/mixins/layout";
 
 export default {
-  data() {
-    return {
-      showNav: false
-    };
-  },
-  methods: {
-    toggleNav() {
-      if (screen.width <= 768) {
-        this.showNav = !this.showNav;
-      }
-    }
-  },
-  created() {
-    //google analytics
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-138727237-1");
-
-    this.$store.dispatch("getConfig");
-  },
-  head() {
-    return {
-      link: [
-        {
-          rel: "stylesheet",
-          href: "https://unpkg.com/aos@2.3.1/dist/aos.css"
-        },
-        {
-          rel: "stylesheet",
-          href:
-            "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-        }
-      ]
-    };
-  },
-  mixins: [layoutMixin],
-  mounted() {
-    if (process.client) {
-      if (screen.width > 768) {
-        this.showNav = true;
-      }
-
-      var mainNav = document.getElementById("main-nav");
-      var sticky = mainNav.offsetTop;
-
-      window.onscroll = () => {
-        if (window.pageYOffset >= sticky) {
-          this.addSticky = true;
-        } else {
-          this.addSticky = false;
-        }
-      };
-      $(document).ready(function() {
-        $(".smooth-scroll").click(function() {
-          $("html, body").animate(
-            {
-              scrollTop: $($.attr(this, "href")).offset().top - 100
-            },
-            500
-          );
-          return false;
-        });
-      });
-    }
-  }
+  components: { headerMenu },
+  mixins: [layoutMixin]
 };
 </script>
+

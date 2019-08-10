@@ -20,41 +20,40 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // {
-      //   rel: "stylesheet",
-      //   type: "text/css",
-      //   href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
-      //   integrity: 'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr',
-      //   crossorigin: 'anonymous'
-      // },
-      // {
-      //   rel: "stylesheet",
-      //   type: "text/css",
-      //   href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
-      //   integrity: 'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T',
-      //   crossorigin: 'anonymous'
-      // }
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: '/css/plugins.css',
+      },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: '/css/style.css',
+      },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: '/css/responsive.css',
+      },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: '/css/color-variations/custom.css',
+      }
     ],
     script: [
-      // {
-      //   src: "https://www.googletagmanager.com/gtag/js?id=UA-138727237-1",
-      //   async: true,
-      // },
-      // {
-      //   src:
-      //     "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js",
-      //   body: true,
-      // },
-      // {
-      //   src: "https://unpkg.com/aos@2.3.1/dist/aos.js",
-      //   body: true,
-      //   defer: true,
-      // },
-      // {
-      //   src:
-      //     "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js",
-      //   body: true,
-      // }
+      {
+        src: "/js/jquery.js",
+        body: true,
+      },
+      {
+        src: "/js/plugins.js",
+        body: true,
+      },
+      {
+        src: "/js/plugins/components/particles.js",
+        body: true,
+      }
     ]
   },
 
@@ -67,8 +66,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    // '~/assets/css/style.css',
-    // '~/assets/css/animate.min.css',
+    '@/assets/css/custom.css',
   ],
 
   /*
