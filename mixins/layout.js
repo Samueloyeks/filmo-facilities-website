@@ -15,12 +15,9 @@ export default {
       return currentActiveRoutes
     }
   },
-<<<<<<< HEAD
   watch: {
     $route(to) {
       this.mountPage();
     }
   }
-=======
->>>>>>> 769c8a475ff0d3566a2544adb17d060acb3462d1
 }
