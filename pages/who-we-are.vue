@@ -4,7 +4,7 @@
     <section
       id="page-title"
       class="header-image text-light"
-      data-parallax-image="http://127.0.0.1:3000/img/covers/who-we-are.jpg"
+      data-parallax-image="/img/covers/who-we-are.jpg"
       style="background-position: bottom;"
     >
       <div class="container">
