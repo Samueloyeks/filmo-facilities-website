@@ -19,68 +19,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <h3 class="text-uppercase">Get In Touch</h3>
-            <div class="m-t-30">
-              <form
-                class="widget-contact-form"
-                action="include/contact-form.php"
-                role="form"
-                method="post"
-              >
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <label for="name">Name</label>
-                    <input
-                      type="text"
-                      aria-required="true"
-                      name="widget-contact-form-name"
-                      class="form-control required name"
-                      placeholder="Enter your Name"
-                    />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      aria-required="true"
-                      name="widget-contact-form-email"
-                      class="form-control required email"
-                      placeholder="Enter your Email"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-12">
-                    <label for="subject">Your Subject</label>
-                    <input
-                      type="text"
-                      name="widget-contact-form-subject"
-                      class="form-control required"
-                      placeholder="Subject..."
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea
-                    type="text"
-                    name="widget-contact-form-message"
-                    rows="5"
-                    class="form-control required"
-                    placeholder="Enter your Message"
-                  ></textarea>
-                </div>
-
-                <div class="form-group" v-if="false">
-                  <script src="https://www.google.com/recaptcha/api.js"></script>
-                  <div class="g-recaptcha" data-sitekey="6LddCxAUAAAAAKOg0-U6IprqOZ7vTfiMNSyQT2-M"></div>
-                </div>
-
-                <button class="btn" type="submit" id="form-submit">
-                  <i class="fa fa-paper-plane"></i>&nbsp;Send message
-                </button>
-              </form>
-            </div>
+            <join-community />
           </div>
           <div class="col-sm-6">
             <h3 class="text-uppercase">Address & Map</h3>
@@ -91,7 +30,8 @@
                   <br />10 Sam Adegbite Close, Off Amodu Ojikutu Street,
                   <br />Victoria Island, Lagos.
                   <br />
-                  <abbr title="Phone">P:</abbr> +234(0)1 271 0234
+                  <abbr title="Phone">P:</abbr>
+                  <a href="tel:+234(0)1 271 0234">+234(0)1 271 0234</a>
                 </address>
               </div>
               <div class="col-lg-6">
@@ -100,7 +40,8 @@
                   <br />1 Kandi Close, Off Aminu Kano Crescent, Wuse II,
                   <br />Abuja, FCT.
                   <br />
-                  <abbr title="Phone">P:</abbr> +234(0)1 271 0234
+                  <abbr title="Phone">P:</abbr>
+                  <a href="tel:+234(0)1 271 0234">+234(0)1 271 0234</a>
                 </address>
               </div>
             </div>
@@ -127,3 +68,12 @@
     <!-- end: CONTENT -->
   </main>
 </template>
+
+<script>
+import joinCommunity from "@/components/join-community";
+
+export default {
+  components: { joinCommunity },
+  head: () => ({ title: "FilmoRealty · Contact Us" })
+};
+</script>

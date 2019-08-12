@@ -47,9 +47,6 @@
                 <nuxt-link to="/news">News</nuxt-link>
               </li>
               <li>
-                <a href="index.html">Careers</a>
-              </li>
-              <li>
                 <nuxt-link to="/contact-us">Contact Us</nuxt-link>
               </li>
             </ul>

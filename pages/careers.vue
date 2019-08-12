@@ -200,5 +200,3 @@ export default {
   }
 };
 </script>
-
-<style src="~/assets/css/careers.css" scoped/>

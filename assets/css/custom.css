@@ -1,6 +1,6 @@
 .background-colored {
   background-color: azure;
-  background-image: url('../img/grey-covers/home-cover.jpg');
+  background-image: url('/img/grey-covers/home-cover.jpg');
   background-attachment: fixed;
   background-size: cover;
   height: 700px !important;
@@ -80,4 +80,18 @@
 .post-image {
   height: 280px;
   background-size: cover;
+}
+
+.post-title {
+  background-size: cover;
+}
+
+.team-members .team-member .team-image>img {
+  width: 187px;
+  height: 240px;
+  border-radius: 40px;
+}
+
+address a:hover, .widget .list a:hover {
+  color: black !important;
 }

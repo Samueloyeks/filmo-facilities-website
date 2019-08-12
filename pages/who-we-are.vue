@@ -5,6 +5,7 @@
       id="page-title"
       class="header-image text-light"
       data-parallax-image="http://127.0.0.1:3000/img/covers/who-we-are.jpg"
+      style="background-position: bottom;"
     >
       <div class="container">
         <div class="page-title">
@@ -21,22 +22,32 @@
         </div>
 
         <div class="row team-members m-b-40">
-          <div class="col-lg-3">
+          <div class="col-md-4">
             <div class="team-member">
               <div class="team-image">
                 <img
                   src="/img/brochure/luqman.jpg"
                   alt="Luqman Edu - CHIEF VISIONARY OFFICER AND MANAGING DIRECTOR"
                 />
-              </div>
-              <div class="team-desc">
-                <h3>Luqman Edu</h3>
-                <span>CHIEF VISIONARY OFFICER AND MANAGING DIRECTOR</span>
-                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.</p>
+                <div class="team-desc">
+                  <h3>Luqman Edu</h3>
+                  <span>
+                    CHIEF VISIONARY OFFICER
+                    <br />& MANAGING DIRECTOR
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-md-8">
+            <p>Luqman worked in the United Kingdom for leading companies in Technology, Oil & Gas and Banking before moving back to Nigeria. He has experience in business strategy, performance management and financial modelling, and has been leading FilmoRealty with his team of millennials since 2015. The company has seen massive growth under his leadership.</p>
+            <p>He holds a BSc in Applied Business Management from Imperial College, an Msc in Global Management from London School of Economics and a Certificate in Finance from The European School of Economics. He also received the traditional title of 'Dan Masanin Sarkin Musulmi' (Friend to the King and Leader of the Learned) from the 18th Sultan of Sokoto.</p>
+            <p>Furthermore, Luqman is passionate about the development of Nigeria and is a founding trustee of The 67 Million Youth Initiative - a coalition of Nigerians with the mandate to galvanize active youth participation in politics and leadership of Nigeria.</p>
+          </div>
+        </div>
+
+        <div class="row team-members m-b-40">
+          <div class="col-md-4">
             <div class="team-member">
               <div class="team-image">
                 <img src="/img/brochure/tosin.jpg" alt="Tosin Durotoye - CHIEF OPERATING OFFICER" />
@@ -44,164 +55,13 @@
               <div class="team-desc">
                 <h3>Tosin Durotoye</h3>
                 <span>CHIEF OPERATING OFFICER</span>
-                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <hr class="space" />
-      <div class="seperator">
-        <i class="fa fa-chevron-down"></i>
-      </div>
-      <hr class="space" />
-      <div class="container">
-        <div class="heading-text heading-section text-center">
-          <h2>Development Team</h2>
-          <span>
-            The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum
-            gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum
-            volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci.
-          </span>
-        </div>
-
-        <div class="row team-members m-b-40">
-          <div class="col-lg-3">
-            <div class="team-member">
-              <div class="team-image">
-                <img src="images/team/6.jpg" />
-              </div>
-              <div class="team-desc">
-                <h3>Alea Smith</h3>
-                <span>Software Developer</span>
-                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.</p>
-                <div class="align-center">
-                  <a class="btn btn-xs btn-slide btn-light" href="#">
-                    <i class="fab fa-facebook-f"></i>
-                    <span>Facebook</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                    <i class="fab fa-twitter"></i>
-                    <span>Twitter</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-                    <i class="far fa-envelope"></i>
-                    <span>Mail</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-8">
+            <p>Tosin has more than 15 years of experience in both the public and private sectors. Prior to joining FilmoRealty, Tosin served as the Director of GreenHouse Lab where she led the establishment of the first female-focused tech accelerator program in Nigeria and the only "Powered by Google" accelerator program in Africa. Prior to this, Tosin worked as the Director of Strategic Partnerships at Framework – an edutech company focused on affordable housing and based in Boston, USA. She also served for 8 years as a Manager at NeighborWorks America – an NGO founded by the United States Congress and focused on affordable housing and community development. In this role, she managed programs and special projects for 250 NeighborWorks’ network organizations and grants totaling over $10M.</p>
+            <p>Tosin is an Atlantic Dialogues Emerging Leader, Women in Africa Ambassador and Princeton Alumnicorps Emerging Leader. She holds a Bachelor of Arts in Political Science from Wake Forest University and a Masters of Urban Planning (Housing, Community and Economic Development) degree from New York University’s Wagner School of Public Service.</p>
           </div>
-          <div class="col-lg-3">
-            <div class="team-member">
-              <div class="team-image">
-                <img src="images/team/7.jpg" />
-              </div>
-              <div class="team-desc">
-                <h3>Ariol Doe</h3>
-                <span>Software Developer</span>
-                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.</p>
-                <div class="align-center">
-                  <a class="btn btn-xs btn-slide btn-light" href="#">
-                    <i class="fab fa-facebook-f"></i>
-                    <span>Facebook</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                    <i class="fab fa-twitter"></i>
-                    <span>Twitter</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-                    <i class="far fa-envelope"></i>
-                    <span>Mail</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="team-member">
-              <div class="team-image">
-                <img src="images/team/8.jpg" />
-              </div>
-              <div class="team-desc">
-                <h3>Emma Ross</h3>
-                <span>Software Developer</span>
-                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.</p>
-                <div class="align-center">
-                  <a class="btn btn-xs btn-slide btn-light" href="#">
-                    <i class="fab fa-facebook-f"></i>
-                    <span>Facebook</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                    <i class="fab fa-twitter"></i>
-                    <span>Twitter</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-                    <i class="far fa-envelope"></i>
-                    <span>Mail</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="team-member">
-              <div class="team-image">
-                <img src="images/team/9.jpg" />
-              </div>
-              <div class="team-desc">
-                <h3>Victor Loda</h3>
-                <span>Software Developer</span>
-                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.</p>
-                <div class="align-center">
-                  <a class="btn btn-xs btn-slide btn-light" href="#">
-                    <i class="fab fa-facebook-f"></i>
-                    <span>Facebook</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                    <i class="fab fa-twitter"></i>
-                    <span>Twitter</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                  </a>
-                  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-                    <i class="far fa-envelope"></i>
-                    <span>Mail</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="background-grey">
-      <div class="container">
-        <div class="text-center">
-          <h2>Want to Join Our Team?</h2>
-          <p class="lead">
-            Aliquam enim enim, pharetra in sodales at, interdum sit amet dui. Nullam vulputate euis od urna
-            non pharetra. Phasellus bland matt is ipsum, ac laoreet lorem lacinia et. interum sit amet dui.
-          </p>
-
-          <a class="btn icon-left" href="#">
-            <span>Apply now!</span>
-          </a>
         </div>
       </div>
     </section>

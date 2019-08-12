@@ -280,5 +280,5 @@ blockquote {
   background-color: #1abc9c !important; }
 
 .btn:hover, .btn:focus, .btn:active, .btn.active {
-  background-color: #0127ff
+  background-color: #0127ff;
   border-color: #0127ff }

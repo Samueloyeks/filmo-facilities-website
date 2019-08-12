@@ -3,7 +3,7 @@
     <!-- Page title -->
     <section
       id="page-title"
-      class="page-title-center text-light background-overlay-dark"
+      class="post-title page-title-center text-light background-overlay-dark"
       :style="{
         'background-image': `url('${post._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}')`
       }"
@@ -27,8 +27,7 @@
           <!-- Post single item-->
           <div class="post-item">
             <div class="post-item-wrap">
-              <div class="post-item-description" v-html="post.content.rendered">
-              </div>
+              <div class="post-item-description" v-html="post.content.rendered"></div>
             </div>
           </div>
           <!-- end: Post single item-->

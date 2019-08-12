@@ -16,7 +16,7 @@ export default {
     }
   },
   watch: {
-    $route() {
+    $route(to) {
       this.mountPage();
     }
   }
