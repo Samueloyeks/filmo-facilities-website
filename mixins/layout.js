@@ -15,6 +15,15 @@ export default {
       return currentActiveRoutes
     }
   },
+  created() {
+    //google analytics
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag("js", new Date())
+    gtag("config", "UA-138727237-1")
+  },
   watch: {
     $route(to) {
       this.mountPage();

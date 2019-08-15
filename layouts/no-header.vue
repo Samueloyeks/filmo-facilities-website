@@ -27,6 +27,7 @@ import layoutFooter from "@/components/layout/footer";
 import layoutMixin from "@/mixins/layout";
 
 export default {
-  components: { headerMenu, layoutFooter }
+  components: { headerMenu, layoutFooter },
+  mixins: [layoutMixin]
 };
 </script>

@@ -54,6 +54,7 @@ export default {
     postLoading: true,
     wp: null
   }),
+  head: () => ({ title: "FilmoRealty · News" }),
   methods: {
     async setPost(id) {
       try {

@@ -53,7 +53,11 @@ module.exports = {
       {
         src: "/js/plugins/components/particles.js",
         body: true,
-      }
+      },
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-138727237-1",
+        async: true,
+      },
     ]
   },
 

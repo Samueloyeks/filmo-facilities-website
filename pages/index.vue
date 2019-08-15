@@ -26,10 +26,10 @@
             >We are a leading PropTech and real estate services company with a focus on real estate management, advisory and consultancy services. With over 25 years of industry experience, we now stand at the forefront of PropTech in Nigeria.</p>
             <p
               class="lead"
-            >Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future. In 2019, we established PropLab.Africa, a subsidiary of FilmoRealty which develops and invests in PropTech solutions.</p>
+            >Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future. At Filmo, we are dedicated to using technology and data to deliver more value to our clients.</p>
             <p
               class="lead"
-            >At Filmo, we are dedicated to using technology and data to deliver more value to our clients.</p>
+            >In 2019, we established PropLab.Africa, a subsidiary of FilmoRealty which develops and invests in PropTech solutions.</p>
           </div>
           <div class="col-lg-3">
             <div class="text-center">
