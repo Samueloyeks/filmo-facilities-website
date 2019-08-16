@@ -19,7 +19,7 @@
     <section class="p-t-120 p-b-40">
       <div class="container xs-text-center sm-text-center">
         <div class="row">
-          <div class="col-lg-9 p-b-40">
+          <div class="col-lg-8 p-b-40">
             <h2>Real estate services re-imagined</h2>
             <p
               class="lead"
@@ -31,20 +31,8 @@
               class="lead"
             >In 2019, we established PropLab.Africa, a subsidiary of FilmoRealty which develops and invests in PropTech solutions.</p>
           </div>
-          <div class="col-lg-3">
-            <div class="text-center">
-              <div class="counter text-lg" style="margin-top: 80px;">
-                <span
-                  data-speed="800"
-                  data-refresh-interval="12"
-                  data-to="25"
-                  data-from="1"
-                  data-seperator="true"
-                ></span>
-              </div>
-              <div class="seperator seperator-small"></div>
-              <p>YEARS OF EXPERIENCE</p>
-            </div>
+          <div class="col-lg-4 m-t-100">
+            <img src="/img/brochure/office.jpg" alt="Filmo Head Office" class="col-image">
           </div>
         </div>
       </div>
@@ -85,7 +73,7 @@
           data-margin="20"
           data-arrows="false"
           data-autoplay="true"
-          data-autoplay-timeout="3000"
+          data-autoplay-timeout="2000"
           data-loop="true"
         >
           <div>

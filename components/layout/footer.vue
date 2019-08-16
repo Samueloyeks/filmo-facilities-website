@@ -60,7 +60,7 @@
                       <nuxt-link to="/">Home</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link to="/what-we-do/management-advisory">Management & Advisory</nuxt-link>
+                      <nuxt-link to="/what-we-do/services">Services</nuxt-link>
                     </li>
                     <li>
                       <nuxt-link to="/who-we-are">Who We Are</nuxt-link>

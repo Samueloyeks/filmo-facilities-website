@@ -10,6 +10,10 @@
   filter: saturate(0.3)
 }
 
+.header-image {
+  height: 800px;
+}
+
 .header-image .page-title {
   position: absolute;
   top: 50%;
@@ -94,4 +98,9 @@
 
 address a:hover, .widget .list a:hover {
   color: black !important;
+}
+
+.col-image {
+  width: 100%;
+  height: auto;
 }

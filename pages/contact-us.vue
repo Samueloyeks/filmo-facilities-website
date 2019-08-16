@@ -3,7 +3,7 @@
     <!-- Page title -->
     <section
       id="page-title"
-      class="header-image text-light"
+      class="header-image contact-us text-light"
       data-parallax-image="/img/covers/contact-us-two.jpg"
     >
       <div class="container">
