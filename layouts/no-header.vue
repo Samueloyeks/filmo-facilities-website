@@ -2,7 +2,7 @@
   <!-- Body Inner -->
   <div class="body-inner">
     <!-- Header -->
-    <header id="header">
+    <header id="header" class="header-plain">
       <header-menu />
     </header>
     <!-- end: Header -->

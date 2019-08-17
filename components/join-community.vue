@@ -1,9 +1,9 @@
 <template>
   <div>
     <h3 class="text-uppercase">Join Our Community</h3>
-    <div class="m-t-30">
+    <div>
       <form class="widget-contact-form" id="community-subscription" role="form" method="post">
-        <span class="text-success" v-text="communityRequestSuccessMessage"></span>
+        <h4 class="text-success m-b-20" v-text="communityRequestSuccessMessage"></h4>
         <div class="row">
           <div class="form-group col-md-6">
             <label for="name">
@@ -70,7 +70,7 @@
               Industry
               <span class="text-danger">*</span>
             </label>
-            <select name="industry_id" class="form-control required industry" required>
+            <select name="industry_id" class="form-control required industry" v-model="community.industry_id" required>
               <option :value="null">Select an industry</option>
               <option
                 v-for="industry in industries"
@@ -144,12 +144,12 @@ export default {
         if (!response.data.status == true) return false;
         this.communityRequestSubmitting = false;
         this.communityRequestSuccessMessage =
-          "Thank you for subscribing to our community. We are glad to have you on board";
+          "Thank you for subscribing to our community. We are glad to have you on board!";
         this.community = {
-          name: "",
-          email: "",
-          location: "",
-          industry_id: "",
+          name: null,
+          email: null,
+          location: null,
+          industry_id: null,
           nigerian_state_id: null
         };
       } catch (error) {

@@ -1,19 +1,25 @@
 <template>
   <main class="prop-lab">
+    <!-- Page title -->
+    <section
+      id="page-title"
+      class="header-image text-light"
+      data-parallax-image="/img/covers/proplab-africa-2.jpg"
+    >
+      <div class="container">
+        <div class="page-title">
+          <h1>PropLab.Africa</h1>
+        </div>
+      </div>
+    </section>
+    <!-- end: Page title -->
+
     <!-- Content -->
     <section id="page-content">
       <div class="container">
-        <!-- post content -->
-
-        <!-- Page title -->
-        <div class="page-title m-b-20">
-          <h1>PropLab.Africa</h1>
-          <p
-            class="lead"
-          >At FilmoRealty, we are committed to leveraging technology to innovatively solve challenges in the facilities management, real estate and city management industries. Through PropLab.Africa, we develop and invest in a portfolio of world-class products and services driving proptech forward in Nigeria.</p>
-        </div>
-        <!-- end: Page title -->
-
+        <p
+          class="lead"
+        >At FilmoRealty, we are committed to leveraging technology to innovatively solve challenges in the facilities management, real estate and city management industries. Through PropLab.Africa, we develop and invest in a portfolio of world-class products and services driving proptech forward in Nigeria.</p>
         <!-- Blog -->
         <div id="blog" class="grid-layout post-2-columns m-b-30" data-item="post-item">
           <!-- Post item-->
@@ -37,7 +43,10 @@
           <!-- Post item-->
           <div class="post-item border">
             <div class="post-item-wrap">
-              <div class="post-image" style="background-image: url('/img/brochure/resido-flat.jpg')"></div>
+              <div
+                class="post-image"
+                style="background-image: url('/img/brochure/resido-flat.jpg')"
+              ></div>
               <div class="post-item-description">
                 <h2>
                   <a href="#">Resido</a>
@@ -102,8 +111,7 @@
 
 <script>
 export default {
-  head: () => ({ title: "FilmoRealty · PropLab.Africa" }),
-  layout: () => "no-header"
+  head: () => ({ title: "FilmoRealty · PropLab.Africa" })
 };
 </script>
 
