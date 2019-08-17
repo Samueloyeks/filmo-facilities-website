@@ -131,7 +131,7 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="team-image">
-                <img src="/img/brochure/Iyin-Aboyeji.jpg" alt="Iyin Aboyeji - BOARD MEMBER" />
+                <img src="/img/brochure/iyin-aboyeji.jpg" alt="Iyin Aboyeji - BOARD MEMBER" />
               </div>
               <div class="team-desc">
                 <h3>Iyin Aboyeji</h3>
