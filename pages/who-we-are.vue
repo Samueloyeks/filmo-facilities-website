@@ -17,7 +17,10 @@
 
     <section>
       <div class="container">
-        <div class="heading-text heading-section text-center">
+        <div class="heading-text heading-section text-center col-md-8 offset-md-2">
+          <p
+            class="lead"
+          >We are a team of over 100 real estate experts, engineers & tech entrepreneurs that work in synergy to provide optimal value to our clients</p>
           <h2>Management</h2>
         </div>
 
