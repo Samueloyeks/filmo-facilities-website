@@ -25,9 +25,9 @@
             <div class="icon-box effect medium border center">
               <div
                 class="product-logo"
-                style="background-image: url('/img/brochure/vamp-logo.jpg')"
+                style="background-image: url('/img/brochure/vampfi-logo.jpg')"
               >
-                <img src="/img/brochure/vamp-logo.jpg" alt="VAMP Logo" class="d-none" />
+                <img src="/img/brochure/vampfi-logo.jpg" alt="VAMP Logo" class="d-none" />
               </div>
               <h3>VAMP FI</h3>
               <p>VAMP Facilities Intelligence is our smart solution for data-driven facilities management optimization. The tool manages and analyses big data from sites and the market in real time to drive facility operating costs, asset health and user experience to their optimal levels.</p>
