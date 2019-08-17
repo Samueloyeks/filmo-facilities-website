@@ -1,25 +1,8 @@
 <style>
 .modal {
   padding-right: 17px;
-  display: block;
+  display: none;
   background: rgba(0, 0, 0, 0.6);
-}
-
-.modal-enter {
-  opacity: 0;
-}
-
-.modal-leave-active {
-  opacity: 0;
-}
-
-.modal-enter .modal-container,
-.modal-leave-active .modal-container {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.modal {
   position: fixed;
   overflow-x: auto;
   overflow-y: scroll;
@@ -28,14 +11,16 @@
   right: 0;
   top: 0;
 }
+
+.modal.show {
+  display: block;
+}
 </style>
 
 <template>
-  <transition name="modal">
-    <div class="modal fade" v-if="show" :class="{'show': show }">
-      <slot @close="show = false"></slot>
-    </div>
-  </transition>
+  <div class="modal" :class="{'show': show }">
+    <slot @close="show = false"></slot>
+  </div>
 </template>
 
 <script>

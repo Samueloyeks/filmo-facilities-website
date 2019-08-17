@@ -2,6 +2,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .background-colored {
   background-color: azure;
   background-image: url('/img/grey-covers/home-cover.jpg');
@@ -95,9 +99,9 @@ body {
 }
 
 .team-members .team-member .team-image>img {
-  width: 187px;
-  height: 240px;
-  border-radius: 40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
 }
 
 address a:hover, .widget .list a:hover {
@@ -107,4 +111,18 @@ address a:hover, .widget .list a:hover {
 .col-image {
   width: 100%;
   height: auto;
+}
+
+.btn.btn-light:hover, .btn.btn-light:focus, .btn.btn-light:active {
+  background-color: #f4f5f8 !important;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  color: #212529 !important;
+  background-color: #f4f5f8 !important;
+  border-color: #d3d9df !important;
+}
+
+.team-members .align-center {
+  display: none;
 }
