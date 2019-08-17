@@ -20,10 +20,8 @@
           <div class="col-lg-9">
             <p
               class="lead"
-            >We utilize a collaborative and team-based approach to guide and support our clients in developing strategic and operational plans that combine smart people, innovative thinking and technology solutions. We are ISO Certified for Property and Facilities Management and our operations are powered by tech. Through our proprietary platforms, we integrate with other products including RFID people and vehicle control, home security alarm systems, e-payment solutions, and energy and waste management.</p>
-            <p
-              class="lead"
-            >Together with our clients, we build strong ideas, thoughtful strategies and powerful executions.</p>
+            >We utilize a collaborative and team-based approach to guide and support our clients in developing strategic and operational plans that combines smart people and innovative thinking. Together with our clients, we build strong ideas, thoughtful strategies and powerful executions.</p>
+            <p class="lead">Our services are ISO 9001:2015 certified and powered by tech.</p>
           </div>
           <!-- Sidebar-->
           <div class="sidebar col-lg-3">
@@ -32,13 +30,19 @@
               <!-- <h4 class="widget-title">Product categories</h4> -->
               <ul class="list list-lines">
                 <li>
-                  <a href="#properties-and-facilities-management" class="smooth-scroll">Properties & Facilities Management</a>
+                  <a
+                    href="#properties-and-facilities-management"
+                    class="smooth-scroll"
+                  >Properties & Facilities Management</a>
                 </li>
                 <li>
-                  <a href="#development-and-project-management" class="smooth-scroll">Development & Project Management</a>
+                  <a
+                    href="#development-and-project-management"
+                    class="smooth-scroll"
+                  >Development & Project Management</a>
                 </li>
                 <li>
-                  <a href="#consultancy-services" class="smooth-scroll">Consultancy Services</a>
+                  <a href="#consultancy-services" class="smooth-scroll">Advisory & Consultancy Services</a>
                 </li>
                 <li>
                   <a href="#our-clients" class="smooth-scroll">Our Clients</a>
@@ -58,7 +62,13 @@
             <h2>Properties & Facilities Management</h2>
             <p
               class="lead"
-            >We are a market leader for total property & facilities management services. We currently provide our services to major commercial and residential properties across 8 states of Nigeria with over 100 full-time technical engineers. Our team has local and international experience in facilities management, and our operations are benchmarked with international standards of maintenance.</p>
+            >We are a market leader for total property & facilities management services. We currently provide our services to major commercial and residential properties across 8 states of Nigeria.</p>
+            <p
+              class="lead"
+            >Our team have achieved the highest levels of certification for facilities management and our operations are benchmarked with international standards of maintenance. The technical engineers are equipped with the latest tools and attend 20-hours technical refresher courses annually by industry professionals.</p>
+            <p
+              class="lead"
+            >All operations are monitored at our HQ operations control room and big data is analysed in real time for service optimization. We provide our clients with regular reports of a 360-view of site activities and service delivery. Furthermore, to manage large estates, our platform integrates with other tech products including RFID people and vehicle control, home security alarm systems, e-payment and energy management solutions.</p>
           </div>
           <div class="col-lg-4">
             <img
@@ -78,7 +88,10 @@
             <h2>Development & Project Management</h2>
             <p
               class="lead"
-            >We are a market leader for total property & facilities management services. We currently provide our services to major commercial and residential properties across 8 states of Nigeria with over 100 full-time technical engineers. Our team has local and international experience in facilities management, and our operations are benchmarked with international standards of maintenance.</p>
+            >We have delivered landmark projects with our ﬁrst–class development & project management consulting services for new and existing built environments. We deploy site management resources for site activities coordination and use our smart tech platform for work monitoring and progress reporting to ensure that projects are completed to specification and quality, within budget and deadlines.</p>
+            <p
+              class="lead"
+            >We were the development managers for the first high-rise development on Eko Atlantic (Lagos, Nigeria), and have been project managers for many of the residential multi-tenant developments in Victoria Island & Ikoyi (Lagos, Nigeria).</p>
           </div>
           <div class="col-lg-4">
             <img
@@ -95,10 +108,11 @@
       <div class="container xs-text-center sm-text-center">
         <div class="row">
           <div class="col-lg-8 p-b-40">
-            <h2>Consultancy Services</h2>
+            <h2>Advisory & Consultancy Services</h2>
             <p
               class="lead"
-            >We have consulted for the public and private sectors, federal and state governments, and major agencies and organisations for impactful solutions to major challenges. We utilize our vast industry knowledge and experience with cutting edge technologies to deliver innovative solutions to our clients. We provide process documentation to facilitate operational efﬁciencies and drive short and long-term strategic planning.</p>
+            >We have successfully advised for billion naira real estate transactions and we are consultants to private organisations, state and federal governments for impactful solutions to real estate issues.</p>
+            <p class="lead">We utilize our vast knowledge and experience in the real estate and tech industries to deliver cutting edge solutions. Our process will include documentation to facilitate operational efﬁciencies and drive short and long-term strategic planning.</p>
           </div>
           <div class="col-lg-4">
             <img src="/img/brochure/bukunmi-flat.jpg" alt="Consultancy image" class="col-image" />

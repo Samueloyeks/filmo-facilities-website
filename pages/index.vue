@@ -23,16 +23,16 @@
             <h2>Real estate services re-imagined</h2>
             <p
               class="lead"
-            >We are a leading PropTech and real estate services company with a focus on real estate management, advisory and consultancy services. With over 25 years of industry experience, we now stand at the forefront of PropTech in Nigeria.</p>
+            >We are a leading real estate services and proptech company in Nigeria with a focus in property & facilities management, development & project management and advisory & consultancy services. With over 25 years of industry experience, we now stand at the forefront of proptech in Africa.</p>
             <p
               class="lead"
-            >Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future. At Filmo, we are dedicated to using technology and data to deliver more value to our clients.</p>
+            >Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future.</p>
             <p
               class="lead"
-            >In 2019, we established PropLab.Africa, a subsidiary of FilmoRealty which develops and invests in PropTech solutions.</p>
+            >At FilmoRealty, we are invested in technology and big data analysis. In 2019 we established PropLab.Africa, a subsidiary of FilmoRealty which develops and invests in PropTech solutions.</p>
           </div>
           <div class="col-lg-4 m-t-100">
-            <img src="/img/brochure/office.jpg" alt="Filmo Head Office" class="col-image">
+            <img src="/img/brochure/office.jpg" alt="Filmo Head Office" class="col-image" />
           </div>
         </div>
       </div>
@@ -47,13 +47,13 @@
             <h2>How We Work</h2>
             <p
               class="lead"
-            >We are partners not contractors. We invest in and utilize big data analysis and predictive analytics to optimize running costs and sustain quality in the management of our clients’ real estate portfolio no matter the size.</p>
+            >We are a team of over 100 real estate experts, engineers & tech entrepreneurs that work in synergy to provide optimal value to our clients. We have a vigorous selection process that considers technical and problem-solving capacity, and we continuously invest in capacity building across technical and life development skills.</p>
             <p
               class="lead"
-            >VAMP, our flagship proprietary software, is the engine that drives all of our technology platforms and supports on-site teams in their daily operations. Our control room monitors and assesses operations, and collects operational data across different matrixes for ongoing analyses of patterns, anomalies and market comparison of quality and costs.</p>
+            >VAMP, our flagship proprietary software, is the engine that drives all of our technology platforms and supports on-site teams in their daily operations. Our people are equipped with the latest tools for operations and communication, and HQ control room monitors and assesses operational big data in real time across different matrixes for optimal service delivery.</p>
             <p
               class="lead"
-            >We are able to provide our clients with a 360-view of activities and the performance of their facilities in real-time compared to historical trends in the market which then equips them to make informed management and strategic decisions to drive their businesses forward.</p>
+            >We are an advocate for working smart in a paperless environment, and with use of tech we have designed all our admin and daily processes to achieve this goal.</p>
           </div>
         </div>
       </div>
