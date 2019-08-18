@@ -135,3 +135,7 @@ address a:hover, .widget .list a:hover {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.product-logo.citispace {
+  background-size: cover;
+}

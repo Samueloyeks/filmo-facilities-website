@@ -36,7 +36,7 @@
                     <nuxt-link to="/what-we-do/services">Services</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link to="/what-we-do">Proplab.Africa</nuxt-link>
+                    <nuxt-link to="/what-we-do">PropLab.Africa</nuxt-link>
                   </li>
                 </ul>
               </li>

@@ -32,8 +32,8 @@
               >
                 <img src="/img/brochure/vampfi-logo.jpg" alt="VAMP Logo" class="d-none" />
               </div>
-              <h3>VAMP FI</h3>
-              <p>VAMP Facilities Intelligence is our smart solution for data-driven facilities management optimization. The tool manages and analyses big data from sites and the market in real time to drive facility operating costs, asset health and user experience to their optimal levels.</p>
+              <p>VAMP FI</p>
+              <span>VAMP Facilities Intelligence is our smart solution for data-driven facilities management optimization. The tool manages and analyses big data from sites and the market in realtime to drip facility operating costs, asset health and user experience to their optimal levels.</span>
             </div>
           </div>
 
@@ -45,21 +45,21 @@
               >
                 <img src="/img/brochure/resido-logo.png" alt="Resido Logo" class="d-none" />
               </div>
-              <h3>Resido</h3>
-              <p>Resido is an app that provides clients with home management services by offering direct access to a Resido Home Manager and a 24/7 team of certified technicians.</p>
+              <p>Resido</p>
+              <span>Resido is an app that provides clients with home management services by offering direct access to a Resido Home Manager and a 24/7 team of certified technicians.</span>
             </div>
           </div>
 
           <div class="col-lg-4">
             <div class="icon-box effect medium border center">
               <div
-                class="product-logo"
-                style="background-image: url('/img/brochure/citispace-logo.svg')"
+                class="product-logo citispace"
+                style="background-image: url('/img/brochure/citispace-logo.svg');"
               >
                 <img src="/img/brochure/citispace-logo.svg" alt="CitiSpace Logo" class="d-none" />
               </div>
-              <h3>CitiSpace</h3>
-              <p>A dedicated community of proptech innovators, startups and investors in the tech and real estate industries. CitiSpace features flexible and collaborative workspaces, shared services, training and hackathon events, and access to our network of industry experts, entrepreneurs and investors.</p>
+              <p>CitiSpace</p>
+              <span>A dedicated community of proptech innovators, startups and investors in the tech and real estate industries. CitiSpace features flexible and collaborative workspaces, shared services, training and hackathon events, and access to our network of industry experts, entrepreneurs and investors.</span>
             </div>
           </div>
         </div>

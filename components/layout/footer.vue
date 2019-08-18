@@ -34,7 +34,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="widget">
-                  <div class="widget-title">Proplab.Africa</div>
+                  <div class="widget-title">PropLab.Africa</div>
                   <ul class="list">
                     <li>
                       <nuxt-link to="/what-we-do">VAMP FI</nuxt-link>
