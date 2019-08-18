@@ -35,7 +35,7 @@
                 />
               </div>
               <div class="team-desc">
-                <h3>Luqman Edu</h3>
+                <h3 class="cursor-pointer" v-modal-open="'luqman-edu-bio'">Luqman Edu</h3>
                 <span>
                   CHIEF VISIONARY OFFICER
                   <br />& MANAGING DIRECTOR
@@ -59,7 +59,7 @@
                 <img src="/img/brochure/tosin.jpg" alt="Tosin Durotoye - CHIEF OPERATING OFFICER" />
               </div>
               <div class="team-desc">
-                <h3>Tosin Durotoye</h3>
+                <h3 class="cursor-pointer" v-modal-open="'tosin-bio'">Tosin Durotoye</h3>
                 <span>CHIEF OPERATING OFFICER</span>
                 <p></p>
                 <div class="align-center">
