@@ -14,7 +14,7 @@
     </section>
     <!-- end: Page title -->
 
-    <section>
+    <section class="background-grey">
       <div class="container">
         <div class="row">
           <div class="col-lg-9">
@@ -44,9 +44,6 @@
                 <li>
                   <a href="#consultancy-services" class="smooth-scroll">Advisory & Consultancy Services</a>
                 </li>
-                <li>
-                  <a href="#our-clients" class="smooth-scroll">Our Clients</a>
-                </li>
               </ul>
             </div>
           </div>
@@ -55,7 +52,7 @@
       </div>
     </section>
 
-    <section class="p-t-120 p-b-40 background-grey" id="properties-and-facilities-management">
+    <section class="p-t-120 p-b-40" id="properties-and-facilities-management">
       <div class="container xs-text-center sm-text-center">
         <div class="row">
           <div class="col-lg-8 p-b-40">
@@ -70,18 +67,18 @@
               class="lead"
             >All operations are monitored at our HQ operations control room and big data is analysed in real time for service optimization. We provide our clients with regular reports of a 360-view of site activities and service delivery. Furthermore, to manage large estates, our platform integrates with other tech products including RFID people and vehicle control, home security alarm systems, e-payment and energy management solutions.</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 m-t-100">
             <img
               src="/img/brochure/operations-technician.jpg"
               alt="Consultancy image"
-              class="col-image"
+              class="col-image m-t-50"
             />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="p-t-120 p-b-40" id="development-and-project-management">
+    <section class="p-t-120 p-b-40 background-grey" id="development-and-project-management">
       <div class="container xs-text-center sm-text-center">
         <div class="row">
           <div class="col-lg-8 p-b-40">
@@ -93,9 +90,9 @@
               class="lead"
             >We were the development managers for the first high-rise development on Eko Atlantic (Lagos, Nigeria), and have been project managers for many of the residential multi-tenant developments in Victoria Island & Ikoyi (Lagos, Nigeria).</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 m-t-100">
             <img
-              src="/img/covers/img-5.jpg"
+              src="/img/brochure/eko-atlantic.jpg"
               alt="development and product management image"
               class="col-image"
             />
@@ -104,7 +101,7 @@
       </div>
     </section>
 
-    <section class="p-t-120 p-b-40 background-grey" id="consultancy-services">
+    <section class="p-t-120 p-b-40" id="consultancy-services">
       <div class="container xs-text-center sm-text-center">
         <div class="row">
           <div class="col-lg-8 p-b-40">
@@ -114,7 +111,7 @@
             >We have successfully advised for billion naira real estate transactions and we are consultants to private organisations, state and federal governments for impactful solutions to real estate issues.</p>
             <p class="lead">We utilize our vast knowledge and experience in the real estate and tech industries to deliver cutting edge solutions. Our process will include documentation to facilitate operational efﬁciencies and drive short and long-term strategic planning.</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 m-t-50">
             <img src="/img/brochure/bukunmi-flat.jpg" alt="Consultancy image" class="col-image" />
           </div>
         </div>
@@ -139,77 +136,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Client logo -->
-    <section>
-      <div class="container" id="our-clients">
-        <h2>Our Clients</h2>
-        <div
-          class="carousel"
-          data-items="6"
-          data-items-sm="4"
-          data-items-xs="3"
-          data-items-xxs="2"
-          data-margin="20"
-          data-arrows="false"
-          data-autoplay="true"
-          data-autoplay-timeout="2000"
-          data-loop="true"
-        >
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/fibre-logo.png" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/mixtafrica-logo.png" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/Access-Bank-Logo.png" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/dangote-logo.png" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/schlumberger-logo.png" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/lagos-state-govt.png" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/firs-logo.png" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/kaduna-state-logo.png" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/NNPC-Logo.png" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img alt src="/img/filmo-clients/9mobile-logo.png" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end: Client logo -->
   </main>
 </template>
 

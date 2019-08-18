@@ -4,7 +4,7 @@
     <section
       id="page-title"
       class="header-image text-light"
-      data-parallax-image="/img/covers/proplab-africa-2.jpg"
+      data-parallax-image="/img/covers/proplab-africa.jpg"
     >
       <div class="container">
         <div class="page-title">
@@ -56,7 +56,7 @@
                 <img src="/img/brochure/citispace-logo.svg" alt="CitiSpace Logo" class="d-none" />
               </div>
               <h3>CitiSpace</h3>
-              <p>A dedicated community of proptech innovators, startups and investors in the tech and real estate industries. CitiSpace features flexible and collaborative workspaces, shared services, training and hackathon events, and access to our network of industry experts, entrepreneurs and investors</p>
+              <p>A dedicated community of proptech innovators, startups and investors in the tech and real estate industries. CitiSpace features flexible and collaborative workspaces, shared services, training and hackathon events, and access to our network of industry experts, entrepreneurs and investors.</p>
             </div>
           </div>
         </div>

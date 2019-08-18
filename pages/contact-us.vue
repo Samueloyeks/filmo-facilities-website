@@ -4,7 +4,7 @@
     <section
       id="page-title"
       class="header-image contact-us text-light"
-      data-parallax-image="/img/covers/contact-us-two.jpg"
+      data-parallax-image="/img/covers/contact-us.jpg"
     >
       <div class="container">
         <div class="page-title">

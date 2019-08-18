@@ -4,7 +4,7 @@
     <section
       id="page-title"
       class="header-image text-light"
-      data-parallax-image="/img/covers/who-we-are.jpg"
+      data-parallax-image="/img/covers/who-we-are-2.jpg"
       style="background-position: bottom;"
     >
       <div class="container">
@@ -15,7 +15,7 @@
     </section>
     <!-- end: Page title -->
 
-    <section>
+    <section  class="p-b-10">
       <div class="container">
         <div class="heading-text heading-section text-center">
           <h2>Management</h2>
@@ -76,7 +76,7 @@
       </div>
     </section>
 
-    <section class="board">
+    <section class="p-t-10">
       <div class="container">
         <div class="heading-text heading-section text-center">
           <h2>Our Board</h2>
