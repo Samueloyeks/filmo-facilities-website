@@ -17,7 +17,10 @@
     <section>
       <div class="container">
         <div class="heading-text heading-section text-center col-md-8 offset-md-2">
-          <p class="lead">We are committed to leveraging tech to innovatively solve challenges in real estate and city management. PropLab.Africa is a subsidiary of FilmoRealty established to develop and invest in start-up companies driving proptech forward in Nigeria.</p>
+          <p
+            class="lead"
+          >We are committed to leveraging tech to innovatively solve challenges in real estate and city management. PropLab.Africa is a subsidiary of FilmoRealty established to develop and invest in start-up companies driving proptech forward in Nigeria.</p>
+          <h2 class="m-t-50">Portfolio</h2>
         </div>
 
         <div class="row">
