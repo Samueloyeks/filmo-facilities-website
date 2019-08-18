@@ -33,7 +33,7 @@
                 <img src="/img/brochure/vampfi-logo.jpg" alt="VAMP Logo" class="d-none" />
               </div>
               <p>VAMP FI</p>
-              <span>VAMP Facilities Intelligence is our smart solution for data-driven facilities management optimization. The tool manages and analyses big data from sites and the market in realtime to drip facility operating costs, asset health and user experience to their optimal levels.</span>
+              <span>VAMP Facilities Intelligence is our smart solution for data-driven facilities management optimization. The tool manages and analyses big data from sites and the market in realtime to drive facility operating costs, asset health and user experience to their optimal levels.</span>
             </div>
           </div>
 

@@ -29,9 +29,6 @@
                   <strong>Lagos Office.</strong>
                   <br />10 Sam Adegbite Close, Off Amodu Ojikutu Street,
                   <br />Victoria Island, Lagos.
-                  <br />
-                  <abbr title="Phone">P:</abbr>
-                  <a href="tel:+234(0)1 271 0234">+234(0)1 271 0234</a>
                 </address>
               </div>
               <div class="col-lg-6">
@@ -39,9 +36,14 @@
                   <strong>Abuja Office</strong>
                   <br />1 Kandi Close, Off Aminu Kano Crescent, Wuse II,
                   <br />Abuja, FCT.
-                  <br />
-                  <abbr title="Phone">P:</abbr>
+                </address>
+              </div>
+              <div class="col m-b-20">
+                <address>
+                  <span>Phone:</span>
                   <a href="tel:+234(0)1 271 0234">+234(0)1 271 0234</a>
+                  <span class="m-l-20">Email:</span>
+                  <a href="mailto:info@filmorealty.com">info@filmorealty.com</a>
                 </address>
               </div>
             </div>
