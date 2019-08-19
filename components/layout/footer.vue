@@ -47,9 +47,6 @@
                     <li>
                       <nuxt-link to="/what-we-do">Citispace</nuxt-link>
                     </li>
-                    <li>
-                      <nuxt-link to="/what-we-do">Hagul</nuxt-link>
-                    </li>
                   </ul>
                 </div>
               </div>
