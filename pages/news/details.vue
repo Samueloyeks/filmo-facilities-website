@@ -40,13 +40,12 @@
 </template>
 
 <script>
-import WPAPI from "wpapi";
+import { get } from "axios";
 import loading from "@/components/ui/loading";
 
 export default {
   components: { loading },
   created() {
-    this.wp = new WPAPI({ endpoint: process.env.CMS_API_BASE_URL });
     this.setPost(this.$route.query.id);
   },
   data: () => ({
@@ -58,11 +57,9 @@ export default {
   methods: {
     async setPost(id) {
       try {
-        this.post = await this.wp
-          .posts()
-          .id(id)
-          .embed();
-        console.log(this.post);
+        this.post = (await get(
+          `${process.env.CMS_API_BASE_URL}/wp/v2/posts/${id}?_embed`
+        )).data;
         this.postLoading = false;
       } catch (error) {
         console.log(error);

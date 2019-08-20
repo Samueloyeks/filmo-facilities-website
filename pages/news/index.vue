@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import WPAPI from "wpapi";
+import { get } from "axios";
 
 import loading from "@/components/ui/loading";
 
@@ -65,7 +65,6 @@ export default {
     }
   },
   created() {
-    this.wp = new WPAPI({ endpoint: process.env.CMS_API_BASE_URL });
     this.getPosts();
   },
   data: () => ({
@@ -78,7 +77,9 @@ export default {
   methods: {
     async getPosts() {
       try {
-        this.posts = await this.wp.posts().embed();
+        this.posts = (await get(
+          process.env.CMS_API_BASE_URL + "/wp/v2/posts?_embed"
+        )).data;
         this.postsLoading = false;
       } catch (error) {
         console.log(error);
