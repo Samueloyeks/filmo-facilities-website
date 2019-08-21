@@ -92,6 +92,7 @@ body {
 .post-image {
   height: 280px;
   background-size: cover;
+  background-position: center;
 }
 
 .post-title {

@@ -19,7 +19,7 @@
               <div
                 class="post-image"
                 :style="{
-                  'background-image': `url('${post._embedded['wp:featuredmedia'][0].media_details.sizes.thumbnail.source_url}')`
+                  'background-image': `url('${post._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}')`
                 }"
               ></div>
               <div class="post-item-description">
