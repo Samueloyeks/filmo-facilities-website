@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   mode: 'spa',
 
@@ -55,7 +57,7 @@ module.exports = {
         body: true,
       },
       {
-        src: "https://www.googletagmanager.com/gtag/js?id=UA-138727237-1",
+        src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`,
         async: true,
       },
     ]

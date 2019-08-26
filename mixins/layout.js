@@ -6,7 +6,7 @@ export default {
       dataLayer.push(arguments)
     }
     gtag("js", new Date())
-    gtag("config", "UA-138727237-1")
+    gtag("config", process.env.GOOGLE_ANALYTICS_ID)
   },
   mounted() {
     //----------------------------------------------------/
