@@ -33,7 +33,7 @@
                 <a href="#">What We Do</a>
                 <ul class="dropdown-menu">
                   <li>
-                    <nuxt-link to="/what-we-do/services">Services</nuxt-link>
+                    <nuxt-link to="/what-we-do/services">Our Services</nuxt-link>
                   </li>
                   <li>
                     <nuxt-link to="/what-we-do">PropLab.Africa</nuxt-link>

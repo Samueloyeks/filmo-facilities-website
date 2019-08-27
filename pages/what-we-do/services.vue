@@ -8,7 +8,7 @@
     >
       <div class="container">
         <div class="page-title">
-          <h1>Services</h1>
+          <h1>Our Services</h1>
         </div>
       </div>
     </section>
@@ -109,7 +109,7 @@
             <p
               class="lead"
             >We have successfully advised for billion naira real estate transactions and we are consultants to private organisations, state and federal governments for impactful solutions to real estate issues.</p>
-            <p class="lead">We utilize our vast knowledge and experience in the real estate and tech industries to deliver cutting edge solutions. Our process will include documentation to facilitate operational efﬁciencies and drive short and long-term strategic planning.</p>
+            <p class="lead">We utilize our vast knowledge and experience in the real estate and tech industries to deliver cutting edge solutions. Our process includes documentation to facilitate operational efﬁciencies and drive short and long-term strategic planning.</p>
           </div>
           <div class="col-lg-4 m-t-50">
             <img src="/img/brochure/bukunmi-flat.jpg" alt="Consultancy image" class="col-image" />

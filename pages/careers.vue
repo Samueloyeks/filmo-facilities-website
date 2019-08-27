@@ -18,7 +18,7 @@
         <div class="col-md-6 offset-md-3">
           <p
             class="lead"
-          >We currently do not have any career openings but you can join our community to be notified of PropTech opportunities.</p>
+          >We currently do not have any career openings but you can join our community to be notified of future opportunities.</p>
         </div>
 
         <div class="col-md-6 offset-md-3 m-t-60" id="our-community">
