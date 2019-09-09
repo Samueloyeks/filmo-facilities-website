@@ -41,7 +41,7 @@
           <div class="row">
             <div class="mt-20 col-lg-4 order-lg-2" data-aos="zoom-in">
               <img
-                src="~/assets/img/brochure/tech-control-room.jpg"
+                src="/img/brochure/tech-control-room.jpg"
                 class="section-image"
                 alt="vr viewing"
               >
@@ -62,7 +62,7 @@
           <h1 class="show-small">Customer Focus Policy</h1>
           <div class="row">
             <div class="mt-20 col-lg-4" data-aos="zoom-in">
-              <img src="~/assets/img/brochure/resido.jpg" class="section-image" alt="vr viewing">
+              <img src="/img/brochure/resido.jpg" class="section-image" alt="vr viewing">
             </div>
             <div class="mt-20 col-lg-8">
               <h1 class="show-big">Customer Focus Policy</h1>
@@ -90,7 +90,7 @@
           <h1 class="show-small">Quality Policy Statement</h1>
           <div class="row">
             <div class="mt-20 col-lg-4 order-lg-2" data-aos="zoom-in">
-              <img src="~/assets/img/covers/img-2.png" class="section-image" alt="vr viewing">
+              <img src="/img/covers/img-2.png" class="section-image" alt="vr viewing">
             </div>
             <div class="mt-20 col-lg-8 order-lg-1">
               <h1 class="show-big">Quality Policy Statement</h1>
@@ -130,30 +130,7 @@ export default {
     return {
       title: "FilmoRealty · Policy Statement"
     };
-  },
-  mounted() {
-    if (process.client) {
-      AOS.init({
-        easing: "ease-in-out-sine",
-        duration: 800
-      });
-
-      $(document).ready(function() {
-        $(".smooth-scroll").click(function() {
-          $("html, body").animate(
-            {
-              scrollTop: $($.attr(this, "href")).offset().top - 100
-            },
-            500
-          );
-          return false;
-        });
-      });
-    }
   }
 }
 </script>
-
-
-<style src="~/assets/css/policy-statement.css" scoped>
 

@@ -1,0 +1,142 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.background-colored {
+  background-color: azure;
+  background-image: url('/img/grey-covers/home-cover.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px !important;
+}
+
+.carousel img {
+  filter: saturate(0.3)
+}
+
+.header-image {
+  height: 700px;
+}
+
+.header-image .page-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  min-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading-text.heading-section>h2:before {
+  background-color: #a1a1a3;
+}
+
+.prop-lab .post-item-description p {
+  height: 150px;
+}
+
+.mapouter, .gmap_canvas, .gmap_canvas_lagos_office {
+  height: 350px;
+  width: 270px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
+
+@media(min-width: 375px) {
+  .mapouter, .gmap_canvas, .gmap_canvas_lagos_office {
+    height: 350px;
+    width: 320px;
+  }
+}
+
+@media(min-width: 425px) {
+  .mapouter, .gmap_canvas, .gmap_canvas_lagos_office {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .mapouter, .gmap_canvas, .gmap_canvas_lagos_office {
+    height: 350px;
+    width: 450px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .mapouter, .gmap_canvas, .gmap_canvas_lagos_office {
+    height: 350px;
+    width: 550px;
+  }
+}
+
+.post-image {
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+}
+
+.post-title {
+  background-size: cover;
+}
+
+.team-members .team-member .team-image>img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+address a:hover, .widget .list a:hover {
+  color: black !important;
+}
+
+.col-image {
+  width: 100%;
+  height: auto;
+}
+
+.btn.btn-light:hover, .btn.btn-light:focus, .btn.btn-light:active {
+  background-color: #f4f5f8 !important;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  color: #212529 !important;
+  background-color: #f4f5f8 !important;
+  border-color: #d3d9df !important;
+}
+
+.team-members .align-center {
+  display: none;
+}
+
+.product-logo {
+  width: 100%;
+  height: 80px;
+  margin: 30px 0px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.product-logo.citispace {
+  background-size: cover;
+}

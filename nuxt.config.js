@@ -1,8 +1,14 @@
-const pkg = require('./package')
-
+require('dotenv').config()
 
 module.exports = {
   mode: 'spa',
+
+  /**
+   * Page Meta Data
+   */
+  meta: {
+    name: 'FilmoRealty'
+  },
 
   /*
   ** Headers of the page
@@ -19,38 +25,41 @@ module.exports = {
       {
         rel: "stylesheet",
         type: "text/css",
-        href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
-        integrity: 'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr',
-        crossorigin: 'anonymous'
+        href: '/css/plugins.css',
       },
       {
         rel: "stylesheet",
         type: "text/css",
-        href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
-        integrity: 'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T',
-        crossorigin: 'anonymous'
+        href: '/css/style.css',
+      },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: '/css/responsive.css',
+      },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: '/css/color-variations/custom.css',
       }
     ],
     script: [
       {
-        src: "https://www.googletagmanager.com/gtag/js?id=UA-138727237-1",
+        src: "/js/jquery.js",
+        body: true,
+      },
+      {
+        src: "/js/plugins.js",
+        body: true,
+      },
+      {
+        src: "/js/plugins/components/particles.js",
+        body: true,
+      },
+      {
+        src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`,
         async: true,
       },
-      {
-        src:
-          "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js",
-        body: true,
-      },
-      {
-        src: "https://unpkg.com/aos@2.3.1/dist/aos.js",
-        body: true,
-        defer: true,
-      },
-      {
-        src:
-          "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js",
-          body: true,
-      }
     ]
   },
 
@@ -63,20 +72,21 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/css/style.css',
-    '~/assets/css/animate.min.css',
+    '@/assets/css/custom.css',
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/mixin'
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/dotenv',
     '@nuxtjs/pwa'
   ],
 
@@ -87,20 +97,5 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-      const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
-      vueLoader.options.transformAssetUrls = {
-        video: ['src', 'poster'],
-        source: 'src',
-        img: 'src',
-        image: 'xlink:href',
-        'b-img': 'src',
-        'b-img-lazy': ['src', 'blank-src'],
-        'b-card': 'img-src',
-        'b-card-img': 'img-src',
-        'b-carousel-slide': 'img-src',
-        'b-embed': 'src'
-      }
-    }
   }
 }
