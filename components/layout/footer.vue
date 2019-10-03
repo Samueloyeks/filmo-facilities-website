@@ -47,6 +47,9 @@
                     <li>
                       <nuxt-link to="/what-we-do">Citispace</nuxt-link>
                     </li>
+                    <li>
+                      <nuxt-link to="/policy">Policy</nuxt-link>
+                    </li>
                   </ul>
                 </div>
               </div>
