@@ -1,15 +1,9 @@
 <template>
   <main>
     <!-- Content -->
-    <section id="page-content" v-show="!postsLoading">
+    <section id="page-content">
       <div class="container">
         <!-- post content -->
-
-        <!-- Page title -->
-        <div class="page-title text-center">
-          <h2>Corporate Policy</h2>
-        </div>
-        <!-- end: Page title -->
         <p></p>
         <p></p>
         <p></p>
@@ -58,43 +52,12 @@
       <!-- end: post content -->
     </section>
     <!-- end: Content -->
-    <loading v-show="postsLoading" />
   </main>
 </template>
 
 <script>
-import { get } from "axios";
-
-import loading from "@/components/ui/loading";
-
 export default {
-  components: { loading },
-  computed: {
-    featuredPost() {
-      return this.posts.find(post => post.sticky == true);
-    }
-  },
-  created() {
-    this.getPosts();
-  },
-  data: () => ({
-    posts: [],
-    postsLoading: true,
-    wp: null
-  }),
-  head: () => ({ title: "FilmoRealty · News" }),
-  layout: () => "no-header",
-  methods: {
-    async getPosts() {
-      try {
-        this.posts = (await get(
-          process.env.CMS_API_BASE_URL + "/wp/v2/posts?_embed"
-        )).data;
-        this.postsLoading = false;
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  }
+  head: () => ({ title: "FilmoRealty · Quality Statement" }),
+  layout: () => "no-header"
 };
 </script>
