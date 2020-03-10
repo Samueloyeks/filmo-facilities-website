@@ -22,7 +22,7 @@
       <!--end: Navigation Resposnive Trigger-->
 
       <!--Navigation-->
-      <div id="mainMenu" class="light">
+      <!-- <div id="mainMenu" class="light">
         <div class="container">
           <nav>
             <ul>
@@ -55,7 +55,7 @@
             </ul>
           </nav>
         </div>
-      </div>
+      </div> -->
       <!--end: Navigation-->
     </div>
   </div>

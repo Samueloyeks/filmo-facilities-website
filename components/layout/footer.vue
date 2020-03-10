@@ -34,7 +34,7 @@
           </div>
           <div class="col-lg-6">
             <div class="row">
-              <div class="col-lg-4">
+              <!-- <div class="col-lg-4">
                 <div class="widget">
                   <div class="widget-title">PropLab.Africa</div>
                   <ul class="list">
@@ -52,9 +52,9 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="col-lg-4">
+              <!-- <div class="col-lg-4">
                 <div class="widget">
                   <div class="widget-title">Pages</div>
                   <ul class="list">
@@ -75,7 +75,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
 
               <div class="col-lg-4">
                 <div class="widget">

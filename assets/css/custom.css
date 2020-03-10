@@ -11,7 +11,7 @@ body {
   background-image: url('/img/grey-covers/home-cover.jpg');
   background-attachment: fixed;
   background-size: cover;
-  height: 700px !important;
+  height: 90vh !important;
 }
 
 .carousel img {

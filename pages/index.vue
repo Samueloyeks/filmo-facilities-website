@@ -6,51 +6,29 @@
         <div class="container-fullscreen">
           <div class="text-middle text-center text-light">
             <!-- Captions -->
-            <h1 data-animate="fadeIn">The evolution of real estate services</h1>
+            <h1 data-animate="fadeInUp" data-animate-delay="600">The Evolution of Facilities Management Services</h1>
+            <span data-animate="fadeInUp" data-animate-delay="300" class="strong"><a href="#" class="business"><span class="business">A subsidiary of FilmoRealty </span></a>
+            </span>
           </div>
         </div>
       </div>
       <!-- Particles Scripts -->
-      <div id="particles-js" class="particles"></div>
+      <!-- <div id="particles-js" class="particles"></div> -->
     </section>
     <!-- end:  Slider with Particles -->
-
-    <!-- Our numbers -->
-    <section class="p-t-120 p-b-40">
-      <div class="container xs-text-center sm-text-center">
-        <div class="row">
-          <div class="col-lg-7 p-b-40">
-            <h2>Real estate services re-imagined</h2>
-            <p
-              class="lead"
-            >We are a leading real estate services and proptech company in Nigeria with a focus in property & facilities management, development & project management and advisory & consultancy services. With over 25 years of industry experience, we now stand at the forefront of proptech in Africa.</p>
-            <p
-              class="lead"
-            >Our track record of delivering real estate services to individuals and companies spanning 12 states in Nigeria uniquely positions us to develop targeted and innovative technology solutions to drive the real estate industry into the future.</p>
-            <p
-              class="lead"
-            >At FilmoRealty, we are invested in technology and big data analysis. In 2019 we established PropLab.Africa, a subsidiary of FilmoRealty which develops and invests in PropTech solutions.</p>
-          </div>
-          <div class="col-lg-5 m-t-100">
-            <img src="/img/brochure/office.jpg" alt="Filmo Head Office" class="col-image" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end: Our numbers -->
 
     <!-- Our numbers -->
     <section class="p-t-60 p-b-40 background-grey">
       <div class="container xs-text-center sm-text-center">
         <div class="row">
           <div class="col-12 p-b-40">
-            <h2>How We Work</h2>
+            <h2>Who We Are</h2>
             <p
               class="lead"
-            >We are a team of over 100 real estate experts, engineers & tech entrepreneurs that work in synergy to provide optimal value to our clients. We have a vigorous selection process that considers technical and problem-solving capacity, and we continuously invest in capacity building across technical and life development skills.</p>
+            >We are a market leader, providing facilities management services to over 20 clients across 13 states of Nigeria. Our operations are ISO 9001:2015 certified and we are benchmarked with international standards of maintenance.</p>
             <p
               class="lead"
-            >VAMP, our flagship proprietary software, is the engine that drives all of our technology platforms and supports on-site teams in their daily operations. Our people are equipped with the latest tools for operations and communication, and HQ control room monitors and assesses operational big data in real time across different matrixes for optimal service delivery.</p>
+            >What makes us truly unique is our people and our technology.</p>
             <p
               class="lead"
             >We are an advocate for working smart in a paperless environment, and with use of tech we have designed all our admin and daily processes to achieve this goal.</p>
@@ -60,8 +38,84 @@
     </section>
     <!-- end: Our numbers -->
 
+    <!-- Our numbers -->
+    <section class="p-t-120 p-b-40">
+      <div class="container xs-text-center sm-text-center">
+        <div class="row">
+          <div class="col-lg-7 p-b-40">
+            <h2>We have great people</h2>
+            <p
+              class="lead"
+            >Our team of over 150 in-house facility managers, client managers and technicians are equipped to provide optimal value to clients; this includes an annual 20-hour technical refresher course by industry professionals and we equip them with the latest gadgets so they work smart.</p>
+          </div>
+          <div class="col-lg-5 m-t-0">
+            <img src="/img/brochure/technicians.jpg" alt="Filmo Head Office" class="col-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-t-120 p-b-40">
+      <div class="container xs-text-center sm-text-center">
+        <div class="row">
+          <div class="col-lg-7 p-b-40">
+            <h2>We know technology</h2>
+            <p
+              class="lead"
+            >We run an efficient operation and convert properties we manage into smart homes and smart offices. The property rep is equipped with an online dashboard, tenants are provided with an app that integrates with IOTs (Internet Of Things) for security and energy management and technicians are equipped with simple task planner mobile apps to receive assigned jobs.</p>
+
+            <p
+              class="lead"
+            >Operations, service performance and tenant experience are all monitored by our HQ control room in real time.</p>
+          </div>
+
+          
+          <div class="col-lg-5 m-t-60">
+            <img src="/img/brochure/control_room.jpg" alt="Filmo Head Office" class="col-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Our numbers -->
+
+        <!-- Content -->
+    <section id="page-content">
+        <div class="container">
+
+              <h1 class="text-center">Our Gallery</h1>
+                    <!-- Gallery -->
+                    <div class="grid-layout grid-3-columns" data-margin="20" data-item="grid-item" data-lightbox="gallery">
+                        <div class="grid-item">
+                                <a class="image-hover-zoom" href="/img/brochure/1.jpg" data-lightbox="gallery-image"><img src="/img/brochure/1.jpg"></a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="image-hover-zoom" href="/img/brochure/2.jpg" data-lightbox="gallery-image"><img src="/img/brochure/2.jpg"></a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="image-hover-zoom" href="/img/brochure/3.jpg" data-lightbox="gallery-image"><img src="/img/brochure/3.jpg"></a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="image-hover-zoom" href="/img/brochure/4.jpg" data-lightbox="gallery-image"><img src="/img/brochure/4.jpg"></a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="image-hover-zoom" href="/img/brochure/5.jpg" data-lightbox="gallery-image"><img src="/img/brochure/5.jpg"></a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="image-hover-zoom" href="/img/brochure/6.jpg" data-lightbox="gallery-image"><img src="/img/brochure/6.jpg"></a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="image-hover-zoom" href="/img/brochure/7.jpg" data-lightbox="gallery-image"><img src="/img/brochure/7.jpg"></a>
+                        </div>
+
+                    </div>
+                    <!-- end: Gallery -->
+          
+
+
+        </div>
+    </section>
     <!-- Client logo -->
-    <section>
+    <!-- <section>
       <div class="container">
         <h2>Major Clients</h2>
         <div
@@ -128,7 +182,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- end: Client logo -->
   </main>
 </template>
@@ -136,7 +190,7 @@
 <script>
 export default {
   head: () => ({
-    title: "FilmoRealty · The Evolution Of Real Estate Services"
+    title: "FFM · The Evolution of Facilities Management Services"
   }),
   mounted() {
     setTimeout(function() {
