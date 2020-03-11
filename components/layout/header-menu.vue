@@ -3,11 +3,11 @@
     <div class="container">
       <!--Logo-->
       <div id="logo">
-        <nuxt-link to="/" class="logo" data-src-dark="/img/filmorealty-logo-light.png">
+        <nuxt-link to="/" class="logo" data-src-dark="/img/brochure/ffm_logo_white.png">
           <img
-            style="margin-top: 15px; height: 45px;"
-            src="/img/filmorealty-logo.png"
-            alt="FilmoRealty Logo"
+            style="margin-top: 15px; height: 75px;"
+            src="/img/brochure/ffm_logo.png"
+            alt="FFM Logo"
           />
         </nuxt-link>
       </div>

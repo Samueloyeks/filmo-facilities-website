@@ -71,7 +71,7 @@
 
           
           <div class="col-lg-5 m-t-60">
-            <img src="/img/brochure/control_room.jpg" alt="Filmo Head Office" class="col-image" />
+            <img src="/img/brochure/control_panel.jpg" alt="Filmo Head Office" class="col-image" />
           </div>
         </div>
       </div>

@@ -34,48 +34,6 @@
           </div>
           <div class="col-lg-6">
             <div class="row">
-              <!-- <div class="col-lg-4">
-                <div class="widget">
-                  <div class="widget-title">PropLab.Africa</div>
-                  <ul class="list">
-                    <li>
-                      <nuxt-link to="/what-we-do">VAMP FI</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/what-we-do">Resido</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/what-we-do">Citispace</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/quality-statement">Quality Statement</nuxt-link>
-                    </li>
-                  </ul>
-                </div>
-              </div> -->
-
-              <!-- <div class="col-lg-4">
-                <div class="widget">
-                  <div class="widget-title">Pages</div>
-                  <ul class="list">
-                    <li>
-                      <nuxt-link to="/">Home</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/what-we-do/services">Services</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/who-we-are">Who We Are</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/news">News</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/contact-us">Contact Us</nuxt-link>
-                    </li>
-                  </ul>
-                </div>
-              </div> -->
 
               <div class="col-lg-4">
                 <div class="widget">
@@ -113,7 +71,7 @@
       <div class="container">
         <div
           class="copyright-text text-center"
-        >&copy; 2019 All rights reserved. FilmoRealty Limited. A subsidiary of Filmo Holdings Limited</div>
+        >&copy; {{ new Date().getFullYear() }} All rights reserved. FilmoRealty Limited. A subsidiary of Filmo Holdings Limited</div>
       </div>
     </div>
   </footer>
