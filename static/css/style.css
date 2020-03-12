@@ -971,6 +971,9 @@ Topbar
   #header.header-sticky.dark .header-inner,
   #header.header-sticky.dark #header-wrap {
     background-color: #1f1f1f !important; }
+    #header .header-inner, #header #header-wrap {
+      height: 100px !important;
+  }
   #header.dark {
     /*Main Menu*/ }
     #header.dark .header-inner,
