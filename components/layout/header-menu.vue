@@ -5,7 +5,7 @@
       <div id="logo">
         <nuxt-link to="/" class="logo" data-src-dark="/img/brochure/ffm_logo_white.png">
           <img
-            style="margin-top: 15px; height: 75px;"
+            style="margin-top: 5px; height: 70px;"
             src="/img/brochure/ffm_logo.png"
             alt="FFM Logo"
           />
