@@ -8,7 +8,7 @@ body {
 
 .background-colored {
   background-color: azure;
-  background-image: url('/img/grey-covers/home-cover.jpg');
+  background-image: url('/img/grey-covers/home-cover.png');
   background-attachment: fixed;
   background-size: cover;
   height: 90vh !important;
