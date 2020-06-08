@@ -2181,9 +2181,7 @@ select {
 }
 
 .site-header .header-inner .site-logo a img {
-  width: 190px;
-  height: 120px;
-
+  width: 100%;
 }
 
 .site-header .header-inner .site-logo a .sticky-logo {
