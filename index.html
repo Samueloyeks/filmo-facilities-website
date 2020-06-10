@@ -1016,19 +1016,19 @@
 				alert("Kindly enter an email");
 				return;
 			}
-			Email.send({
-				SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
-				Host: "smtp-mail.outlook.com",
-				port: 587,
-				Username: "lanre.a@filmorealty.com",
-				Password: "October251992@",
-				To: 'lanre.a@filmorealty.com',
-				From: "lanre.a@filmorealty.com",
-				Subject: "New User",
-				Body: `A new user just booked for a meeting with the email ${(escape(document.getElementById('newsletter-form-email').value))}`
-			}).then(
-				message => alert("We will contact you soon")
-			);
+			// Email.send({
+			// 	SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
+			// 	Host: "smtp-mail.outlook.com",
+			// 	port: 587,
+			// 	Username: "lanre.a@filmorealty.com",
+			// 	Password: "October251992@",
+			// 	To: 'lanre.a@filmorealty.com',
+			// 	From: "lanre.a@filmorealty.com",
+			// 	Subject: "New User",
+			// 	Body: `A new user just booked for a meeting with the email ${(escape(document.getElementById('newsletter-form-email').value))}`
+			// }).then(
+			// 	message => alert("We will contact you soon")
+			// );
 		}
 	</script>
 	<script>
