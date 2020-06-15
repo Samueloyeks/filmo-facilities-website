@@ -3270,6 +3270,8 @@ select {
 .banner.banner-four {
   background-image: -o-linear-gradient(150deg, #000F85 0%, #475DFF 100%);
   background-image: linear-gradient(-60deg, #000F85 0%, #475DFF 100%);
+  z-index: -3;
+  /* background-color: '#000f85'; */
   height: 1060px;
   padding-top: 290px;
   /* height: 95vh;
@@ -14738,6 +14740,14 @@ Download Two
   .search-form-widget label {
     width: 100%;
   }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /*--------------------------------------------------------------
