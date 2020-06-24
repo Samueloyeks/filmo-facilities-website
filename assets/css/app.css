@@ -3037,7 +3037,7 @@ select {
   font-size: 60px;
   line-height: 70px;
   font-weight: 400;
-  color: #fff;
+  color: #000F85;
   margin-bottom: 20px;
 }
 
@@ -3306,7 +3306,7 @@ select {
 .banner.banner-four .banner-content .description {
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: #000F85;
   line-height: 30px;
   margin-bottom: 47px;
 }
