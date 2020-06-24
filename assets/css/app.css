@@ -3037,8 +3037,9 @@ select {
   font-size: 60px;
   line-height: 70px;
   font-weight: 400;
-  color: #000F85;
+  color: #B6252B;
   margin-bottom: 20px;
+  text-align: right;
 }
 
 .banner .banner-content .banner-title span {
@@ -3270,7 +3271,7 @@ select {
 .banner.banner-four {
   background-image: -o-linear-gradient(150deg, #000F85 0%, #475DFF 100%);
   background-image: linear-gradient(-60deg, #000F85 0%, #475DFF 100%);
-  z-index: -3;
+  z-index: 1;
   /* background-color: '#000f85'; */
   height: 1060px;
   padding-top: 290px;
@@ -3967,6 +3968,7 @@ select {
 
 .newsletter-form-banner {
   margin-bottom: 50px;
+  margin-left: 800px;
 }
 
 .newsletter-form-banner .newsletter-inner {
