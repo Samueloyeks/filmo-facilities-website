@@ -3973,7 +3973,8 @@ select {
 
 .newsletter-form-banner .newsletter-inner {
   position: relative;
-  max-width: 575px;
+  width: 475px;
+  margin-left: 270px;
 }
 
 .newsletter-form-banner .newsletter-inner input {
@@ -4994,6 +4995,11 @@ select {
   }
   .newsletter-form-banner .newsletter-inner input {
     padding: 10px 140px 10px 30px;
+  }
+
+  .newsletter-form-banner .newsletter-inner {
+    width: 375px;
+    margin-left: -10px;
   }
 }
 
