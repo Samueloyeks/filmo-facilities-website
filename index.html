@@ -966,6 +966,7 @@
 
 	</div><!-- /#site -->
 
+
 	<!-- Dependency Scripts -->
 	<script src="dependencies/jquery/jquery.min.js"></script>
 	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
@@ -993,25 +994,23 @@
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script>
-		function sendMail() {
+		async function sendMail() {
 			if (escape(document.getElementById('newsletter-form-email').value) == "" || escape(document.getElementById('newsletter-form-email').value) == null) {
 				alert("Kindly enter an email");
 				return;
 			}
-			// Email.send({
-			// 	SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
-			// 	Host: "smtp-mail.outlook.com",
-			// 	port: 587,
-			// 	Username: "lanre.a@filmorealty.com",
-			// 	Password: "October251992@",
-			// 	To: 'lanre.a@filmorealty.com',
-			// 	From: "lanre.a@filmorealty.com",
-			// 	Subject: "New User",
-			// 	Body: `A new user just booked for a meeting with the email ${(escape(document.getElementById('newsletter-form-email').value))}`
-			// }).then(
-			// 	message => alert("We will contact you soon")
-			// );
+			const email = escape(document.getElementById('newsletter-form-email').value);
+
+			const response = await axios.post(`http://127.0.0.1:3333/ffm-client`, {
+				email
+			})
+
+			if(response.status == 200) {
+				alert(response.data.message);
+			}
+			
 		}
 	</script>
 	<script>
