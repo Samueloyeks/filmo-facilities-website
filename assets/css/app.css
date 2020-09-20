@@ -133,7 +133,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   margin-top: 0;
   font-weight: 600;
-  color: #2b2350;
+  color: orange;
 }
 
 img {
@@ -1887,7 +1887,7 @@ select {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   position: absolute;
-  background: #000F85;
+  background: orange;
   top: 50%;
   left: 50%;
   width: 30px;
@@ -1901,13 +1901,13 @@ select {
   -webkit-animation: blob-grow linear 3.4s infinite;
           animation: blob-grow linear 3.4s infinite;
   border-radius: 50%;
-  -webkit-box-shadow: 0 -10px 40px -5px #000F85;
-          box-shadow: 0 -10px 40px -5px #000F85;
+  -webkit-box-shadow: 0 -10px 40px -5px orange;
+          box-shadow: 0 -10px 40px -5px orange;
 }
 
 .blob {
   position: absolute;
-  background: #000F85;
+  background: orange;
   top: 50%;
   left: 50%;
   width: 30px;
@@ -3037,7 +3037,7 @@ select {
   font-size: 60px;
   line-height: 70px;
   font-weight: 400;
-  color: #B6252B;
+  color: orange;
   margin-bottom: 20px;
   text-align: right;
 }
@@ -5014,7 +5014,7 @@ select {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #000F85;
+  color: orange;
   letter-spacing: 3px;
 }
 
@@ -5025,7 +5025,7 @@ select {
 }
 
 .section-title .title span {
-  color: #000F85;
+  color: orange;
 }
 
 .section-title .title-two {
@@ -5037,7 +5037,7 @@ select {
 }
 
 .section-title .title-two span {
-  color: #000F85;
+  color: orange;
 }
 
 .section-title.style-two .title {
@@ -5069,7 +5069,7 @@ select {
 }
 
 .section-title.style-three .sub-title {
-  color: #000F85;
+  color: orange;
   letter-spacing: 5px;
   font-weight: 400;
   margin: 0;
@@ -5087,7 +5087,7 @@ select {
 }
 
 .section-title.color-two .sub-title {
-  color: #000F85;
+  color: orange;
 }
 
 .section-title.style-four .title {
@@ -10575,7 +10575,7 @@ Logo List
 }
 
 .animate-ball .ball {
-  background: #fdf1f1;
+  background: orange;
   border-radius: 50%;
   position: absolute;
 }
@@ -10817,7 +10817,7 @@ Logo List
 }
 
 .animate-ball .ball {
-  background: #fdf1f1;
+  background: orange;
   border-radius: 50%;
   position: absolute;
 }
@@ -12252,7 +12252,7 @@ Download Two
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: #000F85;
+  background: orange;
   top: 49%;
   left: 45%;
   z-index: 22;
@@ -13530,7 +13530,7 @@ Download Two
 }
 
 .blog-content .entry-title a {
-  color: #222;
+  color: orange;
 }
 
 .blog-content .entry-title a:hover {
@@ -15155,7 +15155,7 @@ Download Two
   ##  Footer
   --------------------------------------------------------------*/
 #footer {
-  background: #fdf8f8;
+  background: orange;
 }
 
 #footer .footer-inner {
@@ -15375,7 +15375,7 @@ Download Two
 }
 
 #footer.footer-five {
-  background: #000F85;
+  background: orange;
 }
 
 #footer.footer-five .widget.footer-widget .widget-title {
@@ -15383,7 +15383,7 @@ Download Two
 }
 
 #footer.footer-five .widget p {
-  color: #a39eb9;
+  color: #fff;
 }
 
 #footer.footer-five .footer-menu li a {
@@ -15420,11 +15420,11 @@ Download Two
 }
 
 #footer.footer-five .site-info p {
-  color: #9c99a7;
+  color: #fff;
 }
 
 #footer.footer-five .site-info p a {
-  color: #000F85;
+  color: #fff;
 }
 
 #footer.footer-tax-service {
