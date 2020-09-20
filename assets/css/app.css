@@ -133,7 +133,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   margin-top: 0;
   font-weight: 600;
-  color: orange;
+  color: #D8691C;
 }
 
 img {
@@ -1887,7 +1887,7 @@ select {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   position: absolute;
-  background: orange;
+  background: #D8691C;
   top: 50%;
   left: 50%;
   width: 30px;
@@ -1901,13 +1901,13 @@ select {
   -webkit-animation: blob-grow linear 3.4s infinite;
           animation: blob-grow linear 3.4s infinite;
   border-radius: 50%;
-  -webkit-box-shadow: 0 -10px 40px -5px orange;
-          box-shadow: 0 -10px 40px -5px orange;
+  -webkit-box-shadow: 0 -10px 40px -5px #D8691C;
+          box-shadow: 0 -10px 40px -5px #D8691C;
 }
 
 .blob {
   position: absolute;
-  background: orange;
+  background: #D8691C;
   top: 50%;
   left: 50%;
   width: 30px;
@@ -3037,7 +3037,7 @@ select {
   font-size: 60px;
   line-height: 70px;
   font-weight: 400;
-  color: orange;
+  color: #D8691C;
   margin-bottom: 20px;
   text-align: right;
 }
@@ -5014,7 +5014,7 @@ select {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 500;
-  color: orange;
+  color: #D8691C;
   letter-spacing: 3px;
 }
 
@@ -5025,7 +5025,7 @@ select {
 }
 
 .section-title .title span {
-  color: orange;
+  color: #D8691C;
 }
 
 .section-title .title-two {
@@ -5037,7 +5037,7 @@ select {
 }
 
 .section-title .title-two span {
-  color: orange;
+  color: #D8691C;
 }
 
 .section-title.style-two .title {
@@ -5069,7 +5069,7 @@ select {
 }
 
 .section-title.style-three .sub-title {
-  color: orange;
+  color: #D8691C;
   letter-spacing: 5px;
   font-weight: 400;
   margin: 0;
@@ -5087,7 +5087,7 @@ select {
 }
 
 .section-title.color-two .sub-title {
-  color: orange;
+  color: #D8691C;
 }
 
 .section-title.style-four .title {
@@ -10575,7 +10575,7 @@ Logo List
 }
 
 .animate-ball .ball {
-  background: orange;
+  background: #D8691C;
   border-radius: 50%;
   position: absolute;
 }
@@ -10817,7 +10817,7 @@ Logo List
 }
 
 .animate-ball .ball {
-  background: orange;
+  background: #D8691C;
   border-radius: 50%;
   position: absolute;
 }
@@ -12252,7 +12252,7 @@ Download Two
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: orange;
+  background: #D8691C;
   top: 49%;
   left: 45%;
   z-index: 22;
@@ -13530,7 +13530,7 @@ Download Two
 }
 
 .blog-content .entry-title a {
-  color: orange;
+  color: #D8691C;
 }
 
 .blog-content .entry-title a:hover {
@@ -15155,7 +15155,7 @@ Download Two
   ##  Footer
   --------------------------------------------------------------*/
 #footer {
-  background: orange;
+  background: #D8691C;
 }
 
 #footer .footer-inner {
@@ -15375,7 +15375,7 @@ Download Two
 }
 
 #footer.footer-five {
-  background: orange;
+  background: #D8691C;
 }
 
 #footer.footer-five .widget.footer-widget .widget-title {
