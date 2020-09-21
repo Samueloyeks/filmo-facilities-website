@@ -64,6 +64,14 @@
   }
 }
 
+.filmo-button {
+  background-color: #B6252B;
+  color: #fff;
+  border:0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .element {
   width: 100px;
   height: 100px;
@@ -5234,6 +5242,8 @@ select {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  text-align: center;
+
 }
 
 .saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title a {
@@ -5246,6 +5256,7 @@ select {
 
 .saaspik-icon-box-wrapper .pixsass-icon-box-content p {
   margin: 0;
+  text-align: center;
 }
 
 .saaspik-icon-box-wrapper.style-two {
