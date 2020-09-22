@@ -5257,7 +5257,7 @@ select {
 .saaspik-icon-box-wrapper .pixsass-icon-box-content p {
   margin: 0;
   text-align: left;
-  font-size: 13px;
+  /* font-size: 13px; */
 }
 
 .saaspik-icon-box-wrapper.style-two {
@@ -5380,7 +5380,7 @@ select {
 .saaspik-icon-box-wrapper.style-five {
   -webkit-box-shadow: 0px 30px 60px 0px rgba(52, 27, 159, 0.1);
           box-shadow: 0px 30px 60px 0px rgba(52, 27, 159, 0.1);
-  padding: 45px 40px;
+  padding: 10px 10px;
   background: #fff;
 }
 
