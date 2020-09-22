@@ -2185,7 +2185,7 @@ select {
 
 .site-header .header-inner .site-logo a {
   display: block;
-  max-width: 150px;
+  max-width: 350px;
 }
 
 .site-header .header-inner .site-logo a img {
@@ -5242,7 +5242,7 @@ select {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -5256,7 +5256,8 @@ select {
 
 .saaspik-icon-box-wrapper .pixsass-icon-box-content p {
   margin: 0;
-  text-align: center;
+  text-align: left;
+  font-size: 13px;
 }
 
 .saaspik-icon-box-wrapper.style-two {
